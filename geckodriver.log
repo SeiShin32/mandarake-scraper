@@ -1,0 +1,711 @@
+1629452934575	geckodriver	INFO	Listening on 127.0.0.1:48861
+1629452934584	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile590n8t"
+*** You are running in headless mode.
+1629452938905	Marionette	INFO	Listening on port 39447
+1629452938935	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629453033667	geckodriver	INFO	Listening on 127.0.0.1:55089
+1629453033675	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVIFS0L"
+*** You are running in headless mode.
+1629453037660	Marionette	INFO	Listening on port 35335
+1629453037710	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629453058570	geckodriver	INFO	Listening on 127.0.0.1:45757
+1629453058578	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileUhPIrF"
+*** You are running in headless mode.
+1629453062541	Marionette	INFO	Listening on port 32861
+1629453062612	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629453097937	geckodriver	INFO	Listening on 127.0.0.1:56715
+1629453097946	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilegHYBdl"
+Error: no DISPLAY environment variable specified
+1629453138045	geckodriver	INFO	Listening on 127.0.0.1:50851
+1629453138054	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileMGzYeZ"
+Error: no DISPLAY environment variable specified
+1629453273705	geckodriver	INFO	Listening on 127.0.0.1:56129
+1629453273717	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledNvdnw"
+Error: no DISPLAY environment variable specified
+1629453527883	geckodriver	INFO	Listening on 127.0.0.1:35133
+1629453527892	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexCbJPD"
+Error: no DISPLAY environment variable specified
+1629453628939	geckodriver	INFO	Listening on 127.0.0.1:48613
+1629453628948	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileKrosjR"
+*** You are running in headless mode.
+1629453632677	Marionette	INFO	Listening on port 42831
+1629453632768	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629453672241	geckodriver	INFO	Listening on 127.0.0.1:39913
+1629453672252	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilessrWC6"
+*** You are running in headless mode.
+1629453674945	Marionette	INFO	Listening on port 45675
+1629453675018	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629457078580	geckodriver	INFO	Listening on 127.0.0.1:58771
+1629457078594	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePJvHo0"
+*** You are running in headless mode.
+1629457082499	Marionette	INFO	Listening on port 37183
+1629457082546	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629457136046	geckodriver	INFO	Listening on 127.0.0.1:43899
+1629457136055	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilel2xbFr"
+*** You are running in headless mode.
+1629457140055	Marionette	INFO	Listening on port 42279
+1629457140080	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629457150392	geckodriver	INFO	Listening on 127.0.0.1:43759
+1629457150400	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqYi0sX"
+*** You are running in headless mode.
+1629457154431	Marionette	INFO	Listening on port 43081
+1629457154525	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629457276703	geckodriver	INFO	Listening on 127.0.0.1:43863
+1629457276719	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGGS7Tx"
+*** You are running in headless mode.
+1629457280340	Marionette	INFO	Listening on port 42569
+1629457280444	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629457799835	geckodriver	INFO	Listening on 127.0.0.1:47717
+1629457800856	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilepGK3lC"
+*** You are running in headless mode.
+1629458167577	geckodriver	INFO	Listening on 127.0.0.1:52613
+1629458168591	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqk63zq"
+*** You are running in headless mode.
+1629458174138	Marionette	INFO	Listening on port 41061
+1629458174245	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 114: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 114: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629458335075	geckodriver	INFO	Listening on 127.0.0.1:55171
+1629458335085	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile4p0SXL"
+*** You are running in headless mode.
+1629458338630	Marionette	INFO	Listening on port 33463
+1629458338730	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 114: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 114: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+1629458623142	geckodriver	INFO	Listening on 127.0.0.1:36337
+1629458623150	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileAlPRFM"
+*** You are running in headless mode.
+1629458626944	Marionette	INFO	Listening on port 42285
+1629458626973	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 114: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629458675085	geckodriver	INFO	Listening on 127.0.0.1:50587
+1629458675095	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileHPufgh"
+*** You are running in headless mode.
+1629458678690	Marionette	INFO	Listening on port 38327
+1629458678750	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629458761250	geckodriver	INFO	Listening on 127.0.0.1:51501
+1629458761259	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTRPeJO"
+*** You are running in headless mode.
+1629458764842	Marionette	INFO	Listening on port 44099
+1629458764886	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629458809839	geckodriver	INFO	Listening on 127.0.0.1:57027
+1629458809847	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqGZ61j"
+*** You are running in headless mode.
+1629458813468	Marionette	INFO	Listening on port 42465
+1629458813570	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629458938190	geckodriver	INFO	Listening on 127.0.0.1:44123
+1629458938201	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilepGeFDn"
+*** You are running in headless mode.
+1629458942587	Marionette	INFO	Listening on port 40667
+1629458942647	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629459312362	geckodriver	INFO	Listening on 127.0.0.1:44295
+1629459312375	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileukcVfK"
+*** You are running in headless mode.
+1629459316826	Marionette	INFO	Listening on port 33143
+1629459316916	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629459367160	geckodriver	INFO	Listening on 127.0.0.1:42175
+1629459367172	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile4tYcqa"
+*** You are running in headless mode.
+1629459371425	Marionette	INFO	Listening on port 32991
+1629459371502	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629459406003	geckodriver	INFO	Listening on 127.0.0.1:49017
+1629459406013	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileeEhePz"
+*** You are running in headless mode.
+1629459410397	Marionette	INFO	Listening on port 44895
+1629459410451	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629459436263	geckodriver	INFO	Listening on 127.0.0.1:39813
+1629459436272	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVFCpnZ"
+*** You are running in headless mode.
+1629459440677	Marionette	INFO	Listening on port 46463
+1629459440758	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629459460555	geckodriver	INFO	Listening on 127.0.0.1:39151
+1629459460567	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexDiZvL"
+*** You are running in headless mode.
+1629459464720	Marionette	INFO	Listening on port 39787
+1629459464801	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629459615400	geckodriver	INFO	Listening on 127.0.0.1:39079
+1629459615410	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilea6JnAm"
+*** You are running in headless mode.
+1629459619458	Marionette	INFO	Listening on port 37065
+1629459619546	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629459639201	geckodriver	INFO	Listening on 127.0.0.1:42871
+1629459639211	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileq7lsSb"
+*** You are running in headless mode.
+1629459643809	Marionette	INFO	Listening on port 34687
+1629459643844	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629459924734	geckodriver	INFO	Listening on 127.0.0.1:37311
+1629459925766	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilerK7Lk7"
+*** You are running in headless mode.
+1629459929879	Marionette	INFO	Listening on port 39391
+1629459929942	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629460125767	geckodriver	INFO	Listening on 127.0.0.1:39903
+1629460125900	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileabB1E8"
+1629460376793	geckodriver	INFO	Listening on 127.0.0.1:43203
+1629460377799	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile46qdtZ"
+*** You are running in headless mode.
+1629460382673	Marionette	INFO	Listening on port 38295
+1629460382736	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629461606845	geckodriver	INFO	Listening on 127.0.0.1:57415
+1629461606854	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGvIQrL"
+*** You are running in headless mode.
+1629461611067	Marionette	INFO	Listening on port 34245
+1629461611093	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629461689532	geckodriver	INFO	Listening on 127.0.0.1:42761
+1629461689544	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileHp0kN8"
+*** You are running in headless mode.
+1629461693698	Marionette	INFO	Listening on port 38477
+1629461693774	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629461715860	geckodriver	INFO	Listening on 127.0.0.1:45869
+1629461715869	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilemN0FoI"
+*** You are running in headless mode.
+1629461719483	Marionette	INFO	Listening on port 36711
+1629461719506	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629461742274	geckodriver	INFO	Listening on 127.0.0.1:58835
+1629461742283	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVWIbZy"
+*** You are running in headless mode.
+1629461745813	Marionette	INFO	Listening on port 45965
+1629461745912	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629461829396	geckodriver	INFO	Listening on 127.0.0.1:49629
+1629461829405	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileI2cUZ1"
+*** You are running in headless mode.
+1629461833043	Marionette	INFO	Listening on port 45745
+1629461833146	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629461860394	geckodriver	INFO	Listening on 127.0.0.1:54225
+1629461860402	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileOEuCtb"
+*** You are running in headless mode.
+1629461864476	Marionette	INFO	Listening on port 44707
+1629461864535	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629496561295	geckodriver	INFO	Listening on 127.0.0.1:41287
+1629496562285	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledsoWy6"
+*** You are running in headless mode.
+1629496567936	Marionette	INFO	Listening on port 43977
+1629496568026	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629496806672	geckodriver	INFO	Listening on 127.0.0.1:40323
+1629496806682	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilenc6HVN"
+*** You are running in headless mode.
+1629496811103	Marionette	INFO	Listening on port 33541
+1629496811142	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629497031211	geckodriver	INFO	Listening on 127.0.0.1:60545
+1629497031226	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile4yQbww"
+*** You are running in headless mode.
+1629497035388	Marionette	INFO	Listening on port 37117
+1629497035461	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+Marionette threw an error: [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: chrome://marionette/content/capture.js :: capture.canvas :: line 140"  data: no]
+capture.canvas@chrome://marionette/content/capture.js:140:62
+GeckoDriver.prototype.takeScreenshot@chrome://marionette/content/driver.js:3072:30
+
+Marionette threw an error: [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: chrome://marionette/content/capture.js :: capture.canvas :: line 140"  data: no]
+capture.canvas@chrome://marionette/content/capture.js:140:62
+GeckoDriver.prototype.takeScreenshot@chrome://marionette/content/driver.js:3072:30
+
+1629497256348	geckodriver	INFO	Listening on 127.0.0.1:40597
+1629497256359	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileu9KbXW"
+*** You are running in headless mode.
+1629497260613	Marionette	INFO	Listening on port 37485
+1629497260683	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629703868212	geckodriver	INFO	Listening on 127.0.0.1:34363
+1629703868220	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileODmi3f"
+*** You are running in headless mode.
+1629703873217	Marionette	INFO	Listening on port 37323
+1629703873271	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629703912484	geckodriver	INFO	Listening on 127.0.0.1:57921
+1629703912492	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejn2gRc"
+*** You are running in headless mode.
+1629703916329	Marionette	INFO	Listening on port 39711
+1629703916420	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629703954248	geckodriver	INFO	Listening on 127.0.0.1:44519
+1629703954259	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile8AnXlS"
+*** You are running in headless mode.
+1629703958035	Marionette	INFO	Listening on port 41065
+1629703958086	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript error: https://tools.mandarake.co.jp/tools/js/mdk-other-item-list.js?d=210120, line 49: uncaught exception: XMLHttpRequest status: 0
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629704017508	geckodriver	INFO	Listening on 127.0.0.1:45955
+1629704017517	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile4J5UMG"
+*** You are running in headless mode.
+1629704021287	Marionette	INFO	Listening on port 43433
+1629704021346	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629704090919	geckodriver	INFO	Listening on 127.0.0.1:51911
+1629704090927	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileicOw84"
+*** You are running in headless mode.
+1629704094709	Marionette	INFO	Listening on port 33067
+1629704094758	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629704112699	geckodriver	INFO	Listening on 127.0.0.1:56019
+1629704112708	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezjJ8LP"
+*** You are running in headless mode.
+1629704116473	Marionette	INFO	Listening on port 46147
+1629704116528	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629704137287	geckodriver	INFO	Listening on 127.0.0.1:56857
+1629704137295	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile3zIae9"
+*** You are running in headless mode.
+1629704141222	Marionette	INFO	Listening on port 38249
+1629704141235	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629704315532	geckodriver	INFO	Listening on 127.0.0.1:36973
+1629704315542	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileYSW4Sb"
+*** You are running in headless mode.
+1629704319369	Marionette	INFO	Listening on port 36019
+1629704319464	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1629704321562	geckodriver	INFO	Listening on 127.0.0.1:60387
+1629704321570	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileK5BX23"
+*** You are running in headless mode.
+1629704325103	Marionette	INFO	Listening on port 41475
+1629704325212	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629704734317	geckodriver	INFO	Listening on 127.0.0.1:53389
+1629704734324	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGEMVO5"
+*** You are running in headless mode.
+1629704738068	Marionette	INFO	Listening on port 33077
+1629704738155	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629704758561	geckodriver	INFO	Listening on 127.0.0.1:45151
+1629704758569	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileyKW8rt"
+*** You are running in headless mode.
+1629704762250	Marionette	INFO	Listening on port 37327
+1629704762294	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629709414235	geckodriver	INFO	Listening on 127.0.0.1:55147
+1629709414246	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePdUpvf"
+*** You are running in headless mode.
+1629709417781	Marionette	INFO	Listening on port 39075
+1629709417878	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629709447943	geckodriver	INFO	Listening on 127.0.0.1:55269
+1629709447952	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileprwADU"
+*** You are running in headless mode.
+1629709451351	Marionette	INFO	Listening on port 43107
+1629709451379	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629709473201	geckodriver	INFO	Listening on 127.0.0.1:52205
+1629709473208	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileLUewNe"
+*** You are running in headless mode.
+1629709476802	Marionette	INFO	Listening on port 45901
+1629709476829	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629709486913	geckodriver	INFO	Listening on 127.0.0.1:34815
+1629709486931	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTTkAeG"
+*** You are running in headless mode.
+1629709491255	Marionette	INFO	Listening on port 39443
+1629709491271	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629709510579	geckodriver	INFO	Listening on 127.0.0.1:40367
+1629709510593	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileq2E3jH"
+*** You are running in headless mode.
+1629709518768	Marionette	INFO	Listening on port 42455
+1629709519651	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629709948801	geckodriver	INFO	Listening on 127.0.0.1:46119
+1629709949801	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilefNkWz7"
+*** You are running in headless mode.
+1629709955171	Marionette	INFO	Listening on port 33773
+1629709955254	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629709986640	geckodriver	INFO	Listening on 127.0.0.1:56783
+1629709986649	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileuaHAMK"
+*** You are running in headless mode.
+1629709990561	Marionette	INFO	Listening on port 34671
+1629709990579	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629710063446	geckodriver	INFO	Listening on 127.0.0.1:36329
+1629710063454	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTqqk7j"
+*** You are running in headless mode.
+1629710066863	Marionette	INFO	Listening on port 41707
+1629710066875	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629710074335	geckodriver	INFO	Listening on 127.0.0.1:59667
+1629710074344	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile0gTpST"
+*** You are running in headless mode.
+1629710078039	Marionette	INFO	Listening on port 42517
+1629710078075	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629710163256	geckodriver	INFO	Listening on 127.0.0.1:51565
+1629710163265	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileIDduXA"
+*** You are running in headless mode.
+1629710166764	Marionette	INFO	Listening on port 44517
+1629710166799	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629710173491	geckodriver	INFO	Listening on 127.0.0.1:33159
+1629710173499	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileUYPZr0"
+*** You are running in headless mode.
+1629710177199	Marionette	INFO	Listening on port 38395
+1629710177241	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629710242995	geckodriver	INFO	Listening on 127.0.0.1:38221
+1629710243006	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebHv5S1"
+*** You are running in headless mode.
+1629710246764	Marionette	INFO	Listening on port 45001
+1629710246838	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629716068997	geckodriver	INFO	Listening on 127.0.0.1:35437
+1629716069007	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5wzY3T"
+*** You are running in headless mode.
+1629716072643	Marionette	INFO	Listening on port 38895
+1629716072743	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629716079577	Marionette	INFO	Stopped listening on port 38895
+1629716109986	geckodriver	INFO	Listening on 127.0.0.1:52739
+1629716109995	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilefVRMsJ"
+*** You are running in headless mode.
+1629716113209	Marionette	INFO	Listening on port 40627
+1629716113237	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629716117705	Marionette	INFO	Stopped listening on port 40627
+1629719372035	geckodriver	INFO	Listening on 127.0.0.1:42081
+1629719372044	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiletcBuwE"
+*** You are running in headless mode.
+1629719375350	Marionette	INFO	Listening on port 39965
+1629719375383	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629719382763	Marionette	INFO	Stopped listening on port 39965
+1629719434179	geckodriver	INFO	Listening on 127.0.0.1:39971
+1629719434188	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilefMf3Vj"
+*** You are running in headless mode.
+1629719437360	Marionette	INFO	Listening on port 35173
+1629719437417	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629719442402	Marionette	INFO	Stopped listening on port 35173
+1629719475053	geckodriver	INFO	Listening on 127.0.0.1:42609
+1629719475062	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileYFj9tF"
+*** You are running in headless mode.
+1629719478386	Marionette	INFO	Listening on port 36857
+1629719478497	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629719480640	Marionette	INFO	Stopped listening on port 36857
+1629719507193	geckodriver	INFO	Listening on 127.0.0.1:43893
+1629719507202	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZUvLNu"
+*** You are running in headless mode.
+1629719510518	Marionette	INFO	Listening on port 40223
+1629719510530	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629719512868	Marionette	INFO	Stopped listening on port 40223
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1629719528361	geckodriver	INFO	Listening on 127.0.0.1:53963
+1629719528381	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileEi5KlL"
+*** You are running in headless mode.
+1629719531690	Marionette	INFO	Listening on port 45625
+1629719531707	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629719538361	Marionette	INFO	Stopped listening on port 45625
+1629719626542	geckodriver	INFO	Listening on 127.0.0.1:33601
+1629719626552	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile3Noc2Z"
+*** You are running in headless mode.
+1629719629794	Marionette	INFO	Listening on port 45903
+1629719629891	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629719632302	Marionette	INFO	Stopped listening on port 45903
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1629719642970	geckodriver	INFO	Listening on 127.0.0.1:42195
+1629719642979	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileNNkZcW"
+*** You are running in headless mode.
+1629719646266	Marionette	INFO	Listening on port 34779
+1629719646297	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629719648670	Marionette	INFO	Stopped listening on port 34779
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1629719668222	geckodriver	INFO	Listening on 127.0.0.1:54777
+1629719668233	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFSmeAE"
+*** You are running in headless mode.
+1629719671526	Marionette	INFO	Listening on port 37027
+1629719671555	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629719677294	Marionette	INFO	Stopped listening on port 37027
+1629719765416	geckodriver	INFO	Listening on 127.0.0.1:37759
+1629719765424	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebRqtmo"
+*** You are running in headless mode.
+1629719768609	Marionette	INFO	Listening on port 33257
+1629719768649	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629719774129	Marionette	INFO	Stopped listening on port 33257
+1629719806845	geckodriver	INFO	Listening on 127.0.0.1:51977
+1629719806856	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileEC9BNf"
+*** You are running in headless mode.
+1629719810200	Marionette	INFO	Listening on port 38365
+1629719810283	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629719812861	Marionette	INFO	Stopped listening on port 38365
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1629719839053	geckodriver	INFO	Listening on 127.0.0.1:45371
+1629719839062	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilevU4mq9"
+*** You are running in headless mode.
+1629719842540	Marionette	INFO	Listening on port 38733
+1629719842597	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629719845048	Marionette	INFO	Stopped listening on port 38733
+1629719959227	geckodriver	INFO	Listening on 127.0.0.1:56749
+1629719959235	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexAknDS"
+*** You are running in headless mode.
+1629719962634	Marionette	INFO	Listening on port 44815
+1629719962661	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629719964993	Marionette	INFO	Stopped listening on port 44815
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1629720107067	geckodriver	INFO	Listening on 127.0.0.1:54161
+1629720107077	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejOU2kd"
+*** You are running in headless mode.
+1629720110875	Marionette	INFO	Listening on port 33303
+1629720110910	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629720113635	Marionette	INFO	Stopped listening on port 33303
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1629720184192	geckodriver	INFO	Listening on 127.0.0.1:54451
+1629720184202	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileihKtBX"
+*** You are running in headless mode.
+1629720188077	Marionette	INFO	Listening on port 42485
+1629720188122	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629720191149	Marionette	INFO	Stopped listening on port 42485
+1629720210670	geckodriver	INFO	Listening on 127.0.0.1:44107
+1629720210680	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileK7NzhW"
+*** You are running in headless mode.
+1629720214549	Marionette	INFO	Listening on port 39855
+1629720214604	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629720217307	Marionette	INFO	Stopped listening on port 39855
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1629720341101	geckodriver	INFO	Listening on 127.0.0.1:53575
+1629720341110	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePlyf3e"
+*** You are running in headless mode.
+1629720344946	Marionette	INFO	Listening on port 40355
+1629720345038	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629720347808	Marionette	INFO	Stopped listening on port 40355
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B000D,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B000D,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1629720402224	geckodriver	INFO	Listening on 127.0.0.1:60735
+1629720402239	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileCK9z7X"
+*** You are running in headless mode.
+1629720406493	Marionette	INFO	Listening on port 41961
+1629720406568	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629720409273	Marionette	INFO	Stopped listening on port 41961
+1629720527720	geckodriver	INFO	Listening on 127.0.0.1:34585
+1629720527730	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGcRkBw"
+*** You are running in headless mode.
+1629720531942	Marionette	INFO	Listening on port 41933
+1629720531991	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1629720539581	geckodriver	INFO	Listening on 127.0.0.1:39807
+1629720539591	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilepn0ob0"
+*** You are running in headless mode.
+1629720543602	Marionette	INFO	Listening on port 43189
+1629720543619	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629720546173	Marionette	INFO	Stopped listening on port 43189
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900AA,name=PContent::Msg_StartVisitedQueries) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1629720641677	geckodriver	INFO	Listening on 127.0.0.1:38565
+1629720641693	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileAvcU1g"
+*** You are running in headless mode.
+1629720645709	Marionette	INFO	Listening on port 43883
+1629720645723	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629720648322	Marionette	INFO	Stopped listening on port 43883
+1629720658006	geckodriver	INFO	Listening on 127.0.0.1:43425
+1629720658017	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileOaNTEM"
+*** You are running in headless mode.
+1629720662065	Marionette	INFO	Listening on port 33165
+1629720662152	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629720665093	Marionette	INFO	Stopped listening on port 33165
+1629720691994	geckodriver	INFO	Listening on 127.0.0.1:41239
+1629720692006	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileF5Bv4i"
+*** You are running in headless mode.
+1629720695963	Marionette	INFO	Listening on port 38759
+1629720696030	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629720698520	Marionette	INFO	Stopped listening on port 38759
+1629720845504	geckodriver	INFO	Listening on 127.0.0.1:44937
+1629720845512	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledLo7PZ"
+*** You are running in headless mode.
+1629720849510	Marionette	INFO	Listening on port 40115
+1629720849536	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629720852532	Marionette	INFO	Stopped listening on port 40115
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1629720951019	geckodriver	INFO	Listening on 127.0.0.1:36711
+1629720951031	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilenNnes8"
+*** You are running in headless mode.
+1629720954875	Marionette	INFO	Listening on port 40581
+1629720954972	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629720957452	Marionette	INFO	Stopped listening on port 40581
+1629720974242	geckodriver	INFO	Listening on 127.0.0.1:38695
+1629720974256	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileb8EOP6"
+*** You are running in headless mode.
+1629720978223	Marionette	INFO	Listening on port 46225
+1629720978286	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629720980921	Marionette	INFO	Stopped listening on port 46225
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1629721252427	geckodriver	INFO	Listening on 127.0.0.1:55393
+1629721252439	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilesc25t8"
+*** You are running in headless mode.
+1629721256797	Marionette	INFO	Listening on port 38467
+1629721256865	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629721259497	Marionette	INFO	Stopped listening on port 38467
+1629723420001	geckodriver	INFO	Listening on 127.0.0.1:37167
+1629723420008	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileR623P7"
+*** You are running in headless mode.
+1629723423275	Marionette	INFO	Listening on port 43461
+1629723423340	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 213: unreachable code after return statement
+1629723430732	Marionette	INFO	Stopped listening on port 43461

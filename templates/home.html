@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mandarake Price Scraper</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+
+  <section class="large-stats-wrapper">
+    <h1>SOON(tm)</h1>
+    <div class="large-stats">
+      
+    
+  <input type="text" id="fname" name="fname"><br><br>
+    </div>
+  </section>
+
+  <section class="records">
+    <div class="table-wrapper">
+      <div class="table">
+        <div class="table__row">
+          <div class="table__cell">Name</div>
+          <div class="table__cell">Price</div>
+          <div class="table__cell">Date</div>
+        </div>
+        {% for entry in records %}
+        <div class="table__row">
+          <div class="table__cell">{{entry [0]}}</div>
+          <div class="table__cell">{{entry [1]}}</div>
+          <div class="table__cell">{{entry [2]}}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  
+</body>
+</html>

@@ -12,7 +12,8 @@ def home():
     cur = con.cursor()
 
     try:
-     records = cur.execute('SELECT * FROM weekly_stats').fetchall()
+     records = cur.execute('SELECT * FROM weekly_stats GROUP BY name ORDER BY MAX(date) DESC'
+     ).fetchall()
     except Exception:
         records = []
 

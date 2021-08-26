@@ -3,9 +3,21 @@ from selenium.webdriver.firefox.options import Options
 from datetime import datetime
 import sqlite3
 
-def get_link():
-   link = "https://order.mandarake.co.jp/order/detailPage/item?itemCode=1172309839&ref=list&categoryCode=11&keyword=%E3%83%A8%E3%82%B3%E3%83%8F%E3%83%9E"
-   return link
+def get_links():
+
+   sqliteConnection = sqlite3.connect('prices.db')
+   cursor = sqliteConnection.cursor()
+
+   sqlite_select_query = """SELECT * from target_list"""
+   cursor.execute(sqlite_select_query)
+   links = []
+   for row in cursor: 
+    links.append(row[0])
+    
+
+   cursor.close()
+   sqliteConnection.close()
+   return links
 
 def save_data(name, price, link):
 
@@ -16,7 +28,7 @@ def save_data(name, price, link):
         'date': datetime.now().strftime('%d/%m/%Y %H:%M')        
     }
 
- con = sqlite3.connect('prices.db')
+ con = sqlite3.connect('prices.db', timeout = 10)
  cur = con.cursor()
 
  cur.execute('''CREATE TABLE IF NOT EXISTS weekly_stats(
@@ -47,13 +59,20 @@ options = Options()
 options.add_argument('--headless')
 driver = webdriver.Firefox(executable_path='./geckodriver', options=options)
 
-#Getting data
-driver.get(get_link())
-price = driver.find_element_by_xpath("//meta[@itemprop='price']").get_attribute("content")
-name = driver.find_element_by_xpath("//div[@class='subject']/h1").text
-driver.close()
+#Getting data from every link
 
-print(name)
-print(price)
-print(datetime.now().strftime('%d/%m/%Y %H:%M'))
-save_data(name, price, get_link())
+links = get_links()
+
+for link in links:
+ driver.get(link)
+ price = driver.find_element_by_xpath("//meta[@itemprop='price']").get_attribute("content")
+ name = driver.find_element_by_xpath("//div[@class='subject']/h1").text
+ 
+
+ print(name)
+ print(price)
+ print(datetime.now().strftime('%d/%m/%Y %H:%M'))
+ print("\n")
+ save_data(name, price, link)
+
+driver.close()

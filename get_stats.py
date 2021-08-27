@@ -12,7 +12,7 @@ def get_links():
    cursor.execute(sqlite_select_query)
    links = []
    for row in cursor: 
-    links.append(row[0])
+    links.append(row[1])
     
 
    cursor.close()
@@ -32,24 +32,15 @@ def save_data(name, price, link):
  cur = con.cursor()
 
  cur.execute('''CREATE TABLE IF NOT EXISTS weekly_stats(
-    name TEXT, price TEXT, link TEXT, date TEXT
- )''')
-
- cur.execute('''CREATE TABLE IF NOT EXISTS target_list(
-    link TEXT PRIMARY KEY
+    id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, price TEXT, link TEXT, date TEXT
  )''')
 
  insert = cur.execute(
-    'INSERT INTO weekly_stats VALUES ("%s", "%s", "%s", "%s")' % (
+    'INSERT INTO weekly_stats VALUES (NULL, "%s", "%s", "%s", "%s")' % (
        record['name'], record['price'], record['link'], record['date']
        )
  )
 
- insert = cur.execute(
-    'INSERT OR REPLACE INTO target_list VALUES ("%s")' % (
-       record['link']
-       )
- )
  con.commit()
  con.close()
 

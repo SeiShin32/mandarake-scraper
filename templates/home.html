@@ -19,16 +19,17 @@
     <h1>SOON(tm)</h1>
     <div class="large-stats">
       
-    
-  
+      <form action = "/add" method="post">  
+        <table>  
+            Add new link <input type="text" name="link"> 
+            <input type="submit" id="add" value="Submit"> 
+        </table>  
+        </form>
+      <form action="/delete" method="post">  
+          Remove link <input type="text" name="link">  
+      <input type="submit" id="delete" value="Submit">     
     </div>
   </section>
-  <form action = "/" method="post">  
-    <table>  
-        <input type="text" name="link"> 
-        <input type="submit" value="Submit"> 
-    </table>  
-    </form>  
   <section class="records">
     <div class="table-wrapper">
       <div class="table">
@@ -39,9 +40,9 @@
         </div>
         {% for entry in records %}
         <div class="table__row">
-          <div class="table__cell"><a href={{entry [2]}}>{{entry [0]}}</a></div>
-          <div class="table__cell">{{entry [1]}}</div>
-          <div class="table__cell">{{entry [3]}}</div>
+          <div class="table__cell"><a href={{entry [3]}}>{{entry [1]}}</a></div>
+          <div class="table__cell">{{entry [2]}}</div>
+          <div class="table__cell">{{entry [4]}}</div>
         </div>
         {% endfor %}
       </div>

@@ -19,16 +19,25 @@ def home():
 
     return render_template('home.html', records=records)
 
-
 @app.route('/add', methods=['POST'])
 def add_link():
     link = request.form["link"]
-    if not ("mandarake") in link:
-        print("Invalid link!")
-        return redirect("/")
-
+    
     con = sqlite3.connect('prices.db', timeout = 10)
     cur = con.cursor()
+
+    response = con.execute("SELECT EXISTS(SELECT * FROM target_list WHERE link ='"+ link +"');")
+    check = response.fetchone()[0]
+
+    if not link:
+        print("Empty link!")
+        con.close()
+        return redirect("/")
+
+    if check:
+        print("This link already exists!")
+        con.close()
+        return redirect("/")
 
     cur.execute('''CREATE TABLE IF NOT EXISTS target_list(
     id INTEGER PRIMARY KEY AUTOINCREMENT, link TEXT NOT NULL
@@ -50,6 +59,20 @@ def deletelink():
     link = request.form["link"]  
     con = sqlite3.connect("prices.db")     
     cur = con.cursor()
+
+    response = con.execute("SELECT EXISTS(SELECT * FROM target_list WHERE link ='"+ link +"');")
+    check = response.fetchone()[0]
+
+    if not link:
+        print("Empty link!")
+        con.close()
+        return redirect("/")
+
+    if check == 0:
+        print("Invalid link!")
+        con.close()
+        return redirect("/")
+
     cur.execute("DELETE FROM target_list WHERE link ='"+ link +"';")
     cur.execute("DELETE FROM weekly_stats WHERE link ='"+ link +"';")
 

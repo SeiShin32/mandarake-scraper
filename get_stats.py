@@ -12,8 +12,7 @@ def get_links():
    cursor.execute(sqlite_select_query)
    links = []
    for row in cursor: 
-    links.append(row[1])
-    
+    links.append(row[1])    
 
    cursor.close()
    sqliteConnection.close()
@@ -44,7 +43,6 @@ def save_data(name, price, link):
  con.commit()
  con.close()
 
-
 #Setting up webdriver
 options = Options()
 options.add_argument('--headless')
@@ -56,14 +54,19 @@ links = get_links()
 
 for link in links:
  driver.get(link)
- price = driver.find_element_by_xpath("//meta[@itemprop='price']").get_attribute("content")
- name = driver.find_element_by_xpath("//div[@class='subject']/h1").text
- 
 
- print(name)
- print(price)
- print(datetime.now().strftime('%d/%m/%Y %H:%M'))
- print("\n")
+ if 'mandarake' in link:  
+    price = driver.find_element_by_xpath("//meta[@itemprop='price']").get_attribute("content")
+    name = driver.find_element_by_xpath("//div[@class='subject']/h1").text
+    print(name + "\n" + price + "\n" + datetime.now().strftime('%d/%m/%Y %H:%M') + "\n")
+
+ if 'suruga-ya' in link:
+     name = driver.find_elements_by_xpath('//h1[@class="h1_title_product"]')[0].text
+     price = driver.find_element_by_xpath("//span[@class='text-price-detail price-buy']").text
+     price = ''.join(x for x in price if x.isdigit())
+     print(name + "\n" + price + "\n" + datetime.now().strftime('%d/%m/%Y %H:%M') + "\n")
+     
+ 
  save_data(name, price, link)
 
 driver.close()

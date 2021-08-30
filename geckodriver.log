@@ -597,3 +597,913 @@ JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILU
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1630083113044	geckodriver	INFO	Listening on 127.0.0.1:62603
+1630083114052	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile14m8iv"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630083115172	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile14m8iv/search.json.mozlz4", (void 0)))
+1630083117555	Marionette	INFO	Listening on port 62609
+1630083117604	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript error: https://tools.mandarake.co.jp/reco/aix/assets/js/mdk-reco-aix-v1.2.0.js?d=210821&t=1231, line 53: uncaught exception: Failed to request for recommend.
+JavaScript error: https://tools.mandarake.co.jp/tools/js/mdk-other-item-list.js?d=210120, line 49: uncaught exception: XMLHttpRequest status: 0
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+Exiting due to channel error.
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+[Parent 4625, Compositor] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox-aGkJlf/firefox-91.0.2+build1/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+Marionette threw an error: TypeError: browsingContext.currentWindowGlobal is null
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.jsm:326:29
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1630083121048	Marionette	INFO	Stopped listening on port 62609
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1630083176907	geckodriver	INFO	Listening on 127.0.0.1:62717
+1630083176941	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileS0NAVV"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630083177933	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileS0NAVV/search.json.mozlz4", (void 0)))
+1630083180217	Marionette	INFO	Listening on port 62722
+1630083180318	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript error: https://tools.mandarake.co.jp/reco/aix/assets/js/mdk-reco-aix-v1.2.0.js?d=210821&t=1231, line 53: uncaught exception: Failed to request for recommend.
+JavaScript error: https://tools.mandarake.co.jp/tools/js/mdk-other-item-list.js?d=210120, line 49: uncaught exception: XMLHttpRequest status: 0
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript error: https://tools.mandarake.co.jp/reco/aix/assets/js/mdk-reco-aix-v1.2.0.js?d=210821&t=1231, line 53: uncaught exception: Failed to request for recommend.
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+1630083193592	Marionette	INFO	Stopped listening on port 62722
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1630097688271	geckodriver	INFO	Listening on 127.0.0.1:57530
+1630097689324	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileCOGQqx"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630097690405	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileCOGQqx/search.json.mozlz4", (void 0)))
+1630097692553	Marionette	INFO	Listening on port 57536
+1630097692668	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript error: https://tools.mandarake.co.jp/reco/aix/assets/js/mdk-reco-aix-v1.2.0.js?d=210821&t=1231, line 53: uncaught exception: Failed to request for recommend.
+JavaScript error: https://tools.mandarake.co.jp/tools/js/mdk-other-item-list.js?d=210120, line 49: uncaught exception: XMLHttpRequest status: 0
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript error: https://tools.mandarake.co.jp/reco/aix/assets/js/mdk-reco-aix-v1.2.0.js?d=210821&t=1231, line 53: uncaught exception: Failed to request for recommend.
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+1630097712107	Marionette	INFO	Stopped listening on port 57536
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1630105950683	Marionette	INFO	Stopped listening on port 64285
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1630142350259	geckodriver	INFO	Listening on 127.0.0.1:59331
+1630142351283	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileUqhUfP"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630142353865	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileUqhUfP/search.json.mozlz4", (void 0)))
+1630142356583	Marionette	INFO	Listening on port 59337
+1630142356687	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+Exiting due to channel error.
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x5B0013,name=PHttpChannel::Msg_DeleteSelf) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x5B0013,name=PHttpChannel::Msg_DeleteSelf) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x5B0013,name=PHttpChannel::Msg_DeleteSelf) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x5B0013,name=PHttpChannel::Msg_DeleteSelf) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x5B0013,name=PHttpChannel::Msg_DeleteSelf) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x5B0013,name=PHttpChannel::Msg_DeleteSelf) Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+[Parent 1526, Compositor] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox-aGkJlf/firefox-91.0.2+build1/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1630142380513	Marionette	INFO	Stopped listening on port 59337
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1630142436902	geckodriver	INFO	Listening on 127.0.0.1:59461
+1630142436952	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileuvvjOO"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630142437952	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileuvvjOO/search.json.mozlz4", (void 0)))
+1630142440834	Marionette	INFO	Listening on port 59466
+1630142440914	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript error: https://tools.mandarake.co.jp/tools/js/mdk-other-item-list.js?d=210120, line 49: uncaught exception: XMLHttpRequest status: 0
+JavaScript error: https://tools.mandarake.co.jp/reco/aix/assets/js/mdk-reco-aix-v1.2.0.js?d=210821&t=1231, line 53: uncaught exception: Failed to request for recommend.
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript error: https://tools.mandarake.co.jp/reco/aix/assets/js/mdk-reco-aix-v1.2.0.js?d=210821&t=1231, line 53: uncaught exception: Failed to request for recommend.
+JavaScript error: https://tools.mandarake.co.jp/tools/js/mdk-other-item-list.js?d=210120, line 49: uncaught exception: XMLHttpRequest status: 0
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript error: https://tools.mandarake.co.jp/reco/aix/assets/js/mdk-reco-aix-v1.2.0.js?d=210821&t=1231, line 53: uncaught exception: Failed to request for recommend.
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+1630142458720	Marionette	INFO	Stopped listening on port 59466
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1630333572862	geckodriver	INFO	Listening on 127.0.0.1:52295
+1630333573881	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile8ZcYga"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630333576120	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile8ZcYga/search.json.mozlz4", (void 0)))
+1630333578330	Marionette	INFO	Listening on port 52301
+1630333578402	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+1630333606753	Marionette	INFO	Stopped listening on port 52301
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1630339751744	geckodriver	INFO	Listening on 127.0.0.1:62113
+1630339751767	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilesqbHmg"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630339752650	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilesqbHmg/search.json.mozlz4", (void 0)))
+1630339754693	Marionette	INFO	Listening on port 62118
+1630339754796	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript error: https://tools.mandarake.co.jp/reco/aix/assets/js/mdk-reco-aix-v1.2.0.js?d=210821&t=1231, line 53: uncaught exception: Failed to request for recommend.
+JavaScript error: https://tools.mandarake.co.jp/tools/js/mdk-other-item-list.js?d=210120, line 49: uncaught exception: XMLHttpRequest status: 0
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript error: https://tools.mandarake.co.jp/reco/aix/assets/js/mdk-reco-aix-v1.2.0.js?d=210821&t=1231, line 53: uncaught exception: Failed to request for recommend.
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+1630339769233	Marionette	INFO	Stopped listening on port 62118
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1630342591430	geckodriver	INFO	Listening on 127.0.0.1:53541
+1630342591447	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilewRNj7K"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630342592207	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilewRNj7K/search.json.mozlz4", (void 0)))
+1630342593930	Marionette	INFO	Listening on port 53546
+1630342594034	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+1630342605557	Marionette	INFO	Stopped listening on port 53546
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1630342673317	geckodriver	INFO	Listening on 127.0.0.1:53662
+1630342673334	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileHXAwau"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630342674085	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileHXAwau/search.json.mozlz4", (void 0)))
+1630342675758	Marionette	INFO	Listening on port 53667
+1630342675806	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript error: https://tools.mandarake.co.jp/reco/aix/assets/js/mdk-reco-aix-v1.2.0.js?d=210821&t=1231, line 53: uncaught exception: Failed to request for recommend.
+JavaScript error: https://tools.mandarake.co.jp/tools/js/mdk-other-item-list.js?d=210120, line 49: uncaught exception: XMLHttpRequest status: 0
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+1630342678629	Marionette	INFO	Stopped listening on port 53667
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1630342782016	geckodriver	INFO	Listening on 127.0.0.1:53748
+1630342782062	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileavysTZ"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630342782818	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileavysTZ/search.json.mozlz4", (void 0)))
+1630342784732	Marionette	INFO	Listening on port 53753
+1630342784843	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript error: https://tools.mandarake.co.jp/tools/js/mdk-other-item-list.js?d=210120, line 49: uncaught exception: XMLHttpRequest status: 0
+JavaScript error: https://tools.mandarake.co.jp/reco/aix/assets/js/mdk-reco-aix-v1.2.0.js?d=210821&t=1231, line 53: uncaught exception: Failed to request for recommend.
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript error: https://tools.mandarake.co.jp/tools/js/mdk-other-item-list.js?d=210120, line 49: uncaught exception: XMLHttpRequest status: 0
+JavaScript error: https://tools.mandarake.co.jp/reco/aix/assets/js/mdk-reco-aix-v1.2.0.js?d=210821&t=1231, line 53: uncaught exception: Failed to request for recommend.
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630342799285	Marionette	INFO	Stopped listening on port 53753
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1630342846155	geckodriver	INFO	Listening on 127.0.0.1:53872
+1630342846173	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileC96B9M"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630342846926	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileC96B9M/search.json.mozlz4", (void 0)))
+1630342848670	Marionette	INFO	Listening on port 53877
+1630342848760	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript error: https://tools.mandarake.co.jp/tools/js/mdk-other-item-list.js?d=210120, line 49: uncaught exception: XMLHttpRequest status: 0
+JavaScript error: https://tools.mandarake.co.jp/reco/aix/assets/js/mdk-reco-aix-v1.2.0.js?d=210821&t=1231, line 53: uncaught exception: Failed to request for recommend.
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript error: https://tools.mandarake.co.jp/reco/aix/assets/js/mdk-reco-aix-v1.2.0.js?d=210821&t=1231, line 53: uncaught exception: Failed to request for recommend.
+JavaScript error: https://tools.mandarake.co.jp/tools/js/mdk-other-item-list.js?d=210120, line 49: uncaught exception: XMLHttpRequest status: 0
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630342861350	Marionette	INFO	Stopped listening on port 53877
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1630343222282	geckodriver	INFO	Listening on 127.0.0.1:54109
+1630343222299	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilegy6xCr"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630343223044	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilegy6xCr/search.json.mozlz4", (void 0)))
+1630343224739	Marionette	INFO	Listening on port 54114
+1630343224772	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript error: https://tools.mandarake.co.jp/tools/js/mdk-other-item-list.js?d=210120, line 49: uncaught exception: XMLHttpRequest status: 0
+JavaScript error: https://tools.mandarake.co.jp/reco/aix/assets/js/mdk-reco-aix-v1.2.0.js?d=210821&t=1231, line 53: uncaught exception: Failed to request for recommend.
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript error: https://tools.mandarake.co.jp/tools/js/mdk-other-item-list.js?d=210120, line 49: uncaught exception: XMLHttpRequest status: 0
+JavaScript error: https://tools.mandarake.co.jp/reco/aix/assets/js/mdk-reco-aix-v1.2.0.js?d=210821&t=1231, line 53: uncaught exception: Failed to request for recommend.
+Exiting due to channel error.
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+[Parent 16475, Compositor] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox-aGkJlf/firefox-91.0.2+build1/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1630343234385	Marionette	INFO	Stopped listening on port 54114
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1630345127238	geckodriver	INFO	Listening on 127.0.0.1:63067
+1630345127256	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexDPSSA"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630345128056	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilexDPSSA/search.json.mozlz4", (void 0)))
+1630345129977	Marionette	INFO	Listening on port 63072
+1630345130057	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630346478615	geckodriver	INFO	Listening on 127.0.0.1:51404
+1630346478634	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilej3siFb"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630346479459	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilej3siFb/search.json.mozlz4", (void 0)))
+1630346481258	Marionette	INFO	Listening on port 51409
+1630346481333	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630346501330	geckodriver	INFO	Listening on 127.0.0.1:51519
+1630346501348	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiletNvdrK"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630346502131	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletNvdrK/search.json.mozlz4", (void 0)))
+1630346503983	Marionette	INFO	Listening on port 51524
+1630346504035	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630346779779	geckodriver	INFO	Listening on 127.0.0.1:50193
+1630346779818	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilex6sxyM"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630346780641	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilex6sxyM/search.json.mozlz4", (void 0)))
+1630346782494	Marionette	INFO	Listening on port 50198
+1630346782534	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630346798657	geckodriver	INFO	Listening on 127.0.0.1:50311
+1630346798702	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilegnm4Ie"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630346799543	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilegnm4Ie/search.json.mozlz4", (void 0)))
+1630346801624	Marionette	INFO	Listening on port 50316
+1630346801718	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630346872443	geckodriver	INFO	Listening on 127.0.0.1:50450
+1630346872482	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFAcS5y"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630346873330	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileFAcS5y/search.json.mozlz4", (void 0)))
+1630346875271	Marionette	INFO	Listening on port 50455
+1630346875391	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630346931642	geckodriver	INFO	Listening on 127.0.0.1:50584
+1630346931662	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehW0CeW"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630346932536	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilehW0CeW/search.json.mozlz4", (void 0)))
+1630346934538	Marionette	INFO	Listening on port 50589
+1630346934596	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630346994552	geckodriver	INFO	Listening on 127.0.0.1:50714
+1630346994594	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileeEfqRf"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630346995471	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileeEfqRf/search.json.mozlz4", (void 0)))
+1630346997591	Marionette	INFO	Listening on port 50719
+1630346997721	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630347016800	geckodriver	INFO	Listening on 127.0.0.1:50838
+1630347016851	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDZKFta"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630347017763	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDZKFta/search.json.mozlz4", (void 0)))
+1630347019887	Marionette	INFO	Listening on port 50844
+1630347019971	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630347088794	geckodriver	INFO	Listening on 127.0.0.1:50978
+1630347088813	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRmPVYR"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630347089817	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileRmPVYR/search.json.mozlz4", (void 0)))
+1630347092005	Marionette	INFO	Listening on port 50983
+1630347092067	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630347146698	geckodriver	INFO	Listening on 127.0.0.1:51148
+1630347146758	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileCnGUTP"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630347147715	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileCnGUTP/search.json.mozlz4", (void 0)))
+1630347149930	Marionette	INFO	Listening on port 51153
+1630347150015	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630347204008	geckodriver	INFO	Listening on 127.0.0.1:51286
+1630347204094	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileh8sD3s"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630347205345	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileh8sD3s/search.json.mozlz4", (void 0)))
+1630347208659	Marionette	INFO	Listening on port 51291
+1630347208733	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630347424217	geckodriver	INFO	Listening on 127.0.0.1:61650
+1630347424288	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebiLF4U"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630347425537	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilebiLF4U/search.json.mozlz4", (void 0)))
+1630347428543	Marionette	INFO	Listening on port 61655
+1630347428621	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630347517117	geckodriver	INFO	Listening on 127.0.0.1:61808
+1630347517166	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileOlGGh1"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630347518173	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileOlGGh1/search.json.mozlz4", (void 0)))
+1630347520561	Marionette	INFO	Listening on port 61813
+1630347520647	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630347715553	geckodriver	INFO	Listening on 127.0.0.1:61964
+1630347715624	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileMAulS3"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630347716704	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileMAulS3/search.json.mozlz4", (void 0)))
+1630347719042	Marionette	INFO	Listening on port 61969
+1630347719098	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630347732210	geckodriver	INFO	Listening on 127.0.0.1:62080
+1630347732230	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileW0rGKF"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630347733310	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileW0rGKF/search.json.mozlz4", (void 0)))
+1630347735924	Marionette	INFO	Listening on port 62085
+1630347736011	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630347782057	geckodriver	INFO	Listening on 127.0.0.1:62214
+1630347782101	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilefEgigy"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630347783229	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilefEgigy/search.json.mozlz4", (void 0)))
+1630347785729	Marionette	INFO	Listening on port 62219
+1630347785781	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630347835660	geckodriver	INFO	Listening on 127.0.0.1:62350
+1630347835721	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile7e6rWV"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630347837029	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile7e6rWV/search.json.mozlz4", (void 0)))
+1630347839645	Marionette	INFO	Listening on port 62355
+1630347839740	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+Exiting due to channel error.
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+[Parent 26053, Compositor] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox-aGkJlf/firefox-91.0.2+build1/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1630347846419	Marionette	INFO	Stopped listening on port 62355
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1630347854358	geckodriver	INFO	Listening on 127.0.0.1:62477
+1630347854427	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejK7dts"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630347855635	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilejK7dts/search.json.mozlz4", (void 0)))
+1630347858014	Marionette	INFO	Listening on port 62482
+1630347858143	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630347921326	geckodriver	INFO	Listening on 127.0.0.1:62612
+1630347921407	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileP63CIR"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630347922635	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileP63CIR/search.json.mozlz4", (void 0)))
+1630347925610	Marionette	INFO	Listening on port 62617
+1630347925716	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630348022522	geckodriver	INFO	Listening on 127.0.0.1:62774
+1630348022612	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejmSfsE"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630348023913	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilejmSfsE/search.json.mozlz4", (void 0)))
+1630348026778	Marionette	INFO	Listening on port 62779
+1630348026870	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630348052027	geckodriver	INFO	Listening on 127.0.0.1:62903
+1630348052121	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexm4NTk"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630348053581	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilexm4NTk/search.json.mozlz4", (void 0)))
+1630348056597	Marionette	INFO	Listening on port 62908
+1630348056653	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630348070272	geckodriver	INFO	Listening on 127.0.0.1:63034
+1630348070355	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile0hKFdW"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630348071696	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile0hKFdW/search.json.mozlz4", (void 0)))
+1630348075116	Marionette	INFO	Listening on port 63040
+1630348075254	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630348084844	Marionette	INFO	Stopped listening on port 63040
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1630348094187	geckodriver	INFO	Listening on 127.0.0.1:63183
+1630348094267	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileCjVPeQ"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630348095530	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileCjVPeQ/search.json.mozlz4", (void 0)))
+1630348098853	Marionette	INFO	Listening on port 63188
+1630348098959	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630348387541	geckodriver	INFO	Listening on 127.0.0.1:63431
+1630348388715	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilemHeZge"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630348390645	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilemHeZge/search.json.mozlz4", (void 0)))
+1630348395272	Marionette	INFO	Listening on port 63437
+1630348395369	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630348407191	Marionette	INFO	Stopped listening on port 63437
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630348437387	geckodriver	INFO	Listening on 127.0.0.1:63584
+1630348437640	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2s6xms"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630348439365	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile2s6xms/search.json.mozlz4", (void 0)))
+1630348444056	Marionette	INFO	Listening on port 63589
+1630348444201	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630348461997	geckodriver	INFO	Listening on 127.0.0.1:63733
+1630348462306	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZldtUj"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630348464542	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileZldtUj/search.json.mozlz4", (void 0)))
+1630348470813	Marionette	INFO	Listening on port 63738
+1630348470876	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630348518214	geckodriver	INFO	Listening on 127.0.0.1:63905
+1630348519590	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilei0nA6f"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630348522488	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilei0nA6f/search.json.mozlz4", (void 0)))
+1630348527905	Marionette	INFO	Listening on port 63911
+1630348528088	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630348712096	geckodriver	INFO	Listening on 127.0.0.1:55763
+1630348713327	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelquQvh"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630348715509	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilelquQvh/search.json.mozlz4", (void 0)))
+1630348721640	Marionette	INFO	Listening on port 55769
+1630348721712	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630348900242	geckodriver	INFO	Listening on 127.0.0.1:65303
+1630348901523	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileH5DaPD"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630348903860	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileH5DaPD/search.json.mozlz4", (void 0)))
+1630348909653	Marionette	INFO	Listening on port 65309
+1630348909860	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630348920788	Marionette	INFO	Stopped listening on port 65309
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: https://www.suruga-ya.jp/styles/js/lazysizes.min.js, line 2: NS_ERROR_NOT_INITIALIZED: 
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x5A000D,name=PHttpBackgroundChannel::Msg___delete__) Channel error: cannot send/recv
+
+1630348932275	geckodriver	INFO	Listening on 127.0.0.1:54683
+1630348932553	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileiLZOFf"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630348934527	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileiLZOFf/search.json.mozlz4", (void 0)))
+1630348940840	Marionette	INFO	Listening on port 54688
+1630348941005	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630349028686	geckodriver	INFO	Listening on 127.0.0.1:50573
+1630349029120	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilecq6rE8"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630349031201	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilecq6rE8/search.json.mozlz4", (void 0)))
+1630349036155	Marionette	INFO	Listening on port 50578
+1630349036353	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630349046912	Marionette	INFO	Stopped listening on port 50578
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1630349082540	geckodriver	INFO	Listening on 127.0.0.1:50739
+1630349082717	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileH0PHYj"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630349084544	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileH0PHYj/search.json.mozlz4", (void 0)))
+1630349089586	Marionette	INFO	Listening on port 50744
+1630349089749	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630349146273	geckodriver	INFO	Listening on 127.0.0.1:55813
+1630349146515	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileyAYb11"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630349148677	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileyAYb11/search.json.mozlz4", (void 0)))
+1630349154895	Marionette	INFO	Listening on port 55819
+1630349155041	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630349165512	Marionette	INFO	Stopped listening on port 55819
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: https://www.suruga-ya.jp/styles/js/lazysizes.min.js, line 2: NS_ERROR_NOT_INITIALIZED: 
+1630349220784	geckodriver	INFO	Listening on 127.0.0.1:62696
+1630349222209	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileK3GaYF"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630349224072	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileK3GaYF/search.json.mozlz4", (void 0)))
+Exiting due to channel error.
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.error: SearchService: "maybeReloadEngines failed" (new TypeError("AddonManagerInternal._getProviderByName(...) is undefined", "resource://gre/modules/AddonManager.jsm", 2542))
+console.error: (new Error("Connection closed before committing the transaction.", "resource://gre/modules/Sqlite.jsm", 687))
+1630349257604	geckodriver	INFO	Listening on 127.0.0.1:56762
+1630349257672	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileaUaYpA"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630349259389	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileaUaYpA/search.json.mozlz4", (void 0)))
+1630349263248	Marionette	INFO	Listening on port 56767
+1630349263324	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630349274393	Marionette	INFO	Stopped listening on port 56767
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1630349303574	geckodriver	INFO	Listening on 127.0.0.1:56896
+1630349303642	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileCtLu2H"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630349305197	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileCtLu2H/search.json.mozlz4", (void 0)))
+1630349309213	Marionette	INFO	Listening on port 56901
+1630349309347	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630349318585	Marionette	INFO	Stopped listening on port 56901
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630349340671	geckodriver	INFO	Listening on 127.0.0.1:57030
+1630349340892	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilemlEDVc"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630349342455	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilemlEDVc/search.json.mozlz4", (void 0)))
+1630349346815	Marionette	INFO	Listening on port 57036
+1630349346906	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+JavaScript error: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 4641: TypeError: checkedGrade is undefined
+1630349360347	geckodriver	INFO	Listening on 127.0.0.1:57162
+1630349360770	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiletzdSOT"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630349362528	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletzdSOT/search.json.mozlz4", (void 0)))
+Exiting due to channel error.
+Exiting due to channel error.
+1630349392622	geckodriver	INFO	Listening on 127.0.0.1:57223
+1630349392756	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileoGpiDc"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630349394481	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileoGpiDc/search.json.mozlz4", (void 0)))
+1630349398423	Marionette	INFO	Listening on port 57228
+1630349398569	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+1630349407802	Marionette	INFO	Stopped listening on port 57228
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630349494767	geckodriver	INFO	Listening on 127.0.0.1:57383
+1630349494841	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqjeEVf"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630349496489	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileqjeEVf/search.json.mozlz4", (void 0)))
+1630349500664	Marionette	INFO	Listening on port 57388
+1630349500801	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1630349526340	geckodriver	INFO	Listening on 127.0.0.1:57470
+1630349526546	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileeCxKwH"
+*** You are running in headless mode.
+[GFX1-]: No GPUs detected via PCI
+[GFX1-]: glxtest: process failed (received signal 11)
+1630349528122	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileeCxKwH/search.json.mozlz4", (void 0)))
+1630349532069	Marionette	INFO	Listening on port 57475
+1630349532181	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript error: https://tools.mandarake.co.jp/reco/aix/assets/js/mdk-reco-aix-v1.2.0.js?d=210821&t=1231, line 53: uncaught exception: Failed to request for recommend.
+JavaScript error: https://tools.mandarake.co.jp/tools/js/mdk-other-item-list.js?d=210120, line 49: uncaught exception: XMLHttpRequest status: 0
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-KDVGCQ, line 214: unreachable code after return statement
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+JavaScript warning: https://www.suruga-ya.jp/drupal/sites/default/files/js/js_aO_19ZjqwHMCoZlze1ZJbyZSlL4cQm-MMFlTOssctQ8.js, line 195: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+1630349552549	Marionette	INFO	Stopped listening on port 57475
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

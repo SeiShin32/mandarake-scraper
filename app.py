@@ -26,6 +26,10 @@ def add_link():
     con = sqlite3.connect('prices.db', timeout = 10)
     cur = con.cursor()
 
+    cur.execute('''CREATE TABLE IF NOT EXISTS target_list(
+    id INTEGER PRIMARY KEY AUTOINCREMENT, link TEXT NOT NULL
+    )''')
+
     response = con.execute("SELECT EXISTS(SELECT * FROM target_list WHERE link ='"+ link +"');")
     check = response.fetchone()[0]
 
@@ -38,10 +42,6 @@ def add_link():
         print("This link already exists!")
         con.close()
         return redirect("/")
-
-    cur.execute('''CREATE TABLE IF NOT EXISTS target_list(
-    id INTEGER PRIMARY KEY AUTOINCREMENT, link TEXT NOT NULL
-    )''')
 
     insert = cur.execute(
     'INSERT OR REPLACE INTO target_list VALUES (NULL ,"{l}")'.format(l = link)
@@ -79,5 +79,5 @@ def deletelink():
     con.commit()
     con.close()
 
-    print("record successfully deleted") 
+    print("Record successfully deleted") 
     return redirect("/")

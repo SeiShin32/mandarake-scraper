@@ -4,5 +4,4 @@ prices.db
 test.py
 geckodriver.log
 __pycache__/
-bot.py
-token.py
+tele_token.py

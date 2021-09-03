@@ -54,7 +54,7 @@ def add_link():
     return redirect("/")
 
 @app.route("/delete", methods = ["POST"])  
-def deletelink():  
+def delete_link():  
 
     link = request.form["link"]  
     con = sqlite3.connect("prices.db")     

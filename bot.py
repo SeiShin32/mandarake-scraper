@@ -1,5 +1,5 @@
 from os import link
-import sqlite3, telebot, logging, tele_token
+import sqlite3, telebot, logging, tele_token, get_stats
 
 bot = telebot.TeleBot(tele_token.t_token)
 logger = telebot.logger
@@ -15,7 +15,9 @@ def insert_data(query):
   pass
  finally:
   con.commit()
-  con.close()
+  
+def check_if_entry_exists(link):
+  return insert_data("SELECT EXISTS(SELECT * FROM target_list WHERE link ='" + link + "');").fetchone()[0]
 
 #Pulls data from the database
 
@@ -52,17 +54,43 @@ def help(message):
 
 @bot.message_handler(commands=['add'])
 def add_link(message):
-	link = message.text
-	link = link.split(" ")[1]
-	print("\n" + link + "\n")
-	insert_data('INSERT INTO target_list VALUES (NULL, "%s")' % (link))
-	bot.reply_to(message, 'adding link')
+ link = message.text
+ try:
+  link = link.split(" ")[1]
+ except IndexError:
+  bot.reply_to(message, "There seems to be something wrong with the link (it's probably empty).")
+  return None
+
+ print("\n" + link + "\n")
+
+ if check_if_entry_exists(link):
+   bot.reply_to(message, "This link already exists!")
+   return None
+   
+ insert_data('INSERT INTO target_list VALUES (NULL, "%s")' % (link))
+ bot.reply_to(message, 'adding link')
+  
+@bot.message_handler(commands=['scan'])
+def add_link(message):
+  bot.reply_to(message, 'Scanning...')
+  get_stats.scan()
+  
 
 @bot.message_handler(commands=['delete'])
 def add_link(message):
     link = message.text
-    link = link.split(" ")[1]
+    try:
+     link = link.split(" ")[1]
+    except IndexError:
+     bot.reply_to(message, "There seems to be something wrong with the link (it's probably empty).")
+     return None
+
+    if not check_if_entry_exists(link):
+      bot.reply_to(message, "This link doesn't exist!")
+      return None
+
     print("\n" + link + "\n")
+
     insert_data("DELETE FROM target_list WHERE link ='"+ link +"';")
     insert_data("DELETE FROM weekly_stats WHERE link ='"+ link +"';")
     bot.reply_to(message, 'deleting link')    	

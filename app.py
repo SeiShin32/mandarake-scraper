@@ -1,18 +1,19 @@
 from re import template
 from flask import Flask, render_template, request, redirect, url_for
-import sqlite3
+from psql_con import psql_connection
+import psycopg2
 
 app = Flask(__name__)
 
 
 @app.route('/')
 def home():
-    con = sqlite3.connect('prices.db')
+    con = psql_connection()
     cur = con.cursor()
 
     try:
-        records = cur.execute('SELECT * FROM weekly_stats GROUP BY name ORDER BY MAX(date) DESC'
-                              ).fetchall()
+        records = cur.execute('SELECT * FROM daily_records GROUP BY name ORDER BY MAX(date) DESC'
+        ).fetchall()
     except Exception:
         records = []
 
@@ -25,7 +26,7 @@ def home():
 def add_link():
     link = request.form["link"]
 
-    con = sqlite3.connect('prices.db', timeout=10)
+    con = psql_connection()
     cur = con.cursor()
 
     cur.execute('''CREATE TABLE IF NOT EXISTS target_list(
@@ -62,7 +63,7 @@ def add_link():
 def delete_link():
 
     link = request.form["link"]
-    con = sqlite3.connect("prices.db")
+    con = psql_connection()
     cur = con.cursor()
 
     response = con.execute(
@@ -87,3 +88,14 @@ def delete_link():
 
     print("Record successfully deleted")
     return redirect("/")
+
+
+@app.route("/login")
+def login():
+    return render_template('login.html')
+
+@app.route("/signup")
+def signup():
+    return render_template('signup.html')
+
+

@@ -4,3 +4,4 @@ prices.db
 test.py
 geckodriver.log
 tele_token.py
+psql_con.py

@@ -1,17 +1,16 @@
+from os import getloadavg
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from datetime import datetime
-import sqlite3
-import time
+from psql_con import psql_connection
+import psycopg2, time
 
-def scan():
 
-    def get_links():
-
-        sqliteConnection = sqlite3.connect('prices.db')
+def get_links():
+        sqliteConnection = psql_connection()
         cursor = sqliteConnection.cursor()
 
-        sqlite_select_query = """SELECT * from target_list"""
+        sqlite_select_query = 'SELECT * from target_list'
         cursor.execute(sqlite_select_query)
         links = []
         for row in cursor:
@@ -21,7 +20,7 @@ def scan():
         sqliteConnection.close()
         return links
 
-    def save_data(name, price, link):
+def save_data(name, price, link):
 
         record = {
             'name': name,
@@ -30,15 +29,17 @@ def scan():
             'date': datetime.now().strftime('%d/%m/%Y %H:%M')
         }
 
-        con = sqlite3.connect('prices.db', timeout=10)
+        con = psql_connection()
         cur = con.cursor()
 
-        cur.execute('''CREATE TABLE IF NOT EXISTS weekly_stats(
-    id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, price TEXT, link TEXT, date TEXT
-  )''')
+        cur.execute('''CREATE TABLE IF NOT EXISTS price_stats(
+     id serial PRIMARY KEY, name VARCHAR(255) NOT NULL, price VARCHAR(255) NOT NULL, link VARCHAR(255) NOT NULL, date VARCHAR(255) NOT NULL
+     )''')
+
+        con.commit()
 
         insert = cur.execute(
-            'INSERT INTO weekly_stats VALUES (NULL, "%s", "%s", "%s", "%s")' % (
+            "INSERT INTO price_stats(name, price, link, date) VALUES ('%s', '%s', '%s', '%s')" % (
                 record['name'], record['price'], record['link'], record['date']
             )
         )
@@ -46,17 +47,16 @@ def scan():
         con.commit()
         con.close()
 
-    # Setting up webdriver
-    options = Options()
-    options.add_argument('--headless')
-    driver = webdriver.Firefox(
-        executable_path='./geckodriver', options=options)
+# Setting up webdriver
+options = Options()
+options.add_argument('--headless')
+driver = webdriver.Firefox(
+    executable_path='./geckodriver', options=options)
 
-    # Getting data from every link
+# Getting data from every link
 
-    links = get_links()
-
-    for link in links:  
+links = get_links()
+for link in links: 
         driver.get(link)
         time.sleep(0.5)
 
@@ -69,7 +69,7 @@ def scan():
                 print(name + "\n" + price + "\n" +
                       datetime.now().strftime('%d/%m/%Y %H:%M') + "\n")
                 save_data(name, price, link)
-            except Exception:
+            except TypeError:
                 print("Couldn't scan mandarake page properly! Link: " + link)
 
         if 'suruga-ya' in link:
@@ -85,4 +85,4 @@ def scan():
             except Exception:
                 print("Couldn't scan suruga-ya page properly! Link: " + link + "\n")
 
-    driver.close()
+driver.close()

@@ -73,7 +73,10 @@ def add_link(message):
 @bot.message_handler(commands=['scan'])
 def add_link(message):
   bot.reply_to(message, 'Scanning...')
-  get_stats.scan()
+  try:
+   get_stats.scan()
+  except:
+   bot.reply_to(message, 'Something went wrong! Try again!')
   
 
 @bot.message_handler(commands=['delete'])

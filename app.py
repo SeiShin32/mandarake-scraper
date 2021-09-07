@@ -12,7 +12,7 @@ def home():
 
     try:
         records = cur.execute('SELECT * FROM weekly_stats GROUP BY name ORDER BY MAX(date) DESC'
-                              ).fetchall()
+        ).fetchall()
     except Exception:
         records = []
 
@@ -87,3 +87,14 @@ def delete_link():
 
     print("Record successfully deleted")
     return redirect("/")
+
+
+@app.route("/login")
+def login():
+    return render_template('login.html')
+
+@app.route("/signup")
+def signup():
+    return render_template('signup.html')
+
+

@@ -33,11 +33,6 @@
   <section class="records">
     <div class="table-wrapper">
       <div class="table">
-        <div class="table__row">
-          <div class="table__cell">Name</div>
-          <div class="table__cell">Price</div>
-          <div class="table__cell">Date</div>
-        </div>
         {% for entry in records %}
         <div class="table__row">
           <div class="table__cell"><a href={{entry [3]}}>{{entry [1]}}</a></div>
@@ -48,6 +43,22 @@
       </div>
     </div>
   </section>
+  
+  <div class="card-wrapper">
+    <div class="card">
+        <form name="Main_form">
+
+            <div class = "center">
+                <a href="/signup" class="btn btn--secondary">Sign Up</a>        
+            </div>
+
+            <div class = "center">
+                <a href="/login" class="btn btn--secondary">Login</a>        
+            </div>
+            
+        </form>
+    </div>
+</div>
   
 </body>
 </html>

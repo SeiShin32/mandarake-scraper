@@ -5,3 +5,4 @@ test.py
 geckodriver.log
 tele_token.py
 psql_con.py
+__pycache__

@@ -11,12 +11,12 @@ def home():
     con = psql_connection()
     cur = con.cursor()
 
-    try:
-        records = cur.execute('SELECT * FROM daily_records GROUP BY name ORDER BY MAX(date) DESC'
-        ).fetchall()
-    except Exception:
-        records = []
-
+    try:    
+     cur.execute("SELECT * FROM (SELECT DISTINCT ON (name) name, price, to_char(date, 'dd/mm/yyyy HH24:MI'), date, link FROM price_stats ORDER BY name, date DESC) t ORDER BY date DESC, price")
+     records = cur.fetchall()
+    except:
+     records = []
+    
     con.close()
 
     return render_template('home.html', records=records)
@@ -30,12 +30,15 @@ def add_link():
     cur = con.cursor()
 
     cur.execute('''CREATE TABLE IF NOT EXISTS target_list(
-    id INTEGER PRIMARY KEY AUTOINCREMENT, link TEXT NOT NULL
+    id serial PRIMARY KEY, link VARCHAR(255) NOT NULL
     )''')
 
-    response = con.execute(
-        "SELECT EXISTS(SELECT * FROM target_list WHERE link ='" + link + "');")
-    check = response.fetchone()[0]
+    con.commit()
+
+    exists_query = "SELECT EXISTS(SELECT 1 FROM target_list WHERE link = %s)"
+    cur.execute(exists_query, (link,))
+    
+    check = cur.fetchone()[0]
 
     if not link:
         print("Empty link!")
@@ -47,10 +50,8 @@ def add_link():
         con.close()
         return redirect("/")
 
-    insert = cur.execute(
-        'INSERT OR REPLACE INTO target_list VALUES (NULL ,"{l}")'.format(
-            l=link)
-    )
+    insert_query = 'INSERT INTO target_list (link) VALUES (%s)'
+    cur.execute(insert_query, (link,))
 
     con.commit()
     con.close()
@@ -66,9 +67,10 @@ def delete_link():
     con = psql_connection()
     cur = con.cursor()
 
-    response = con.execute(
-        "SELECT EXISTS(SELECT * FROM target_list WHERE link ='" + link + "');")
-    check = response.fetchone()[0]
+    exists_query = "SELECT EXISTS(SELECT 1 FROM target_list WHERE link = %s)"
+    cur.execute(exists_query, (link,))
+    
+    check = cur.fetchone()[0]
 
     if not link:
         print("Empty link!")
@@ -80,13 +82,15 @@ def delete_link():
         con.close()
         return redirect("/")
 
-    cur.execute("DELETE FROM target_list WHERE link ='" + link + "';")
-    cur.execute("DELETE FROM weekly_stats WHERE link ='" + link + "';")
-
+    delete_query = 'DELETE FROM target_list WHERE link = %s'
+    cur.execute(delete_query, (link,))
+    delete_query = 'DELETE FROM price_stats WHERE link = %s'
+    cur.execute(delete_query, (link,))
     con.commit()
+    
     con.close()
 
-    print("Record successfully deleted")
+    print("Record has been deleted")
     return redirect("/")
 
 

@@ -5,19 +5,17 @@ from datetime import datetime
 from psql_con import psql_connection
 import psycopg2, time
 
-
 def get_links():
-        sqliteConnection = psql_connection()
-        cursor = sqliteConnection.cursor()
+        con = psql_connection()
+        cur = con.cursor()
 
-        sqlite_select_query = 'SELECT * from target_list'
-        cursor.execute(sqlite_select_query)
+        cur.execute('SELECT * from target_list')
         links = []
-        for row in cursor:
+        for row in cur:
             links.append(row[1])
 
-        cursor.close()
-        sqliteConnection.close()
+        cur.close()
+        con.close()
         return links
 
 def save_data(name, price, link):
@@ -26,21 +24,20 @@ def save_data(name, price, link):
             'name': name,
             'price': price,
             'link': link,
-            'date': datetime.now().strftime('%d/%m/%Y %H:%M')
         }
 
         con = psql_connection()
         cur = con.cursor()
 
         cur.execute('''CREATE TABLE IF NOT EXISTS price_stats(
-     id serial PRIMARY KEY, name VARCHAR(255) NOT NULL, price VARCHAR(255) NOT NULL, link VARCHAR(255) NOT NULL, date VARCHAR(255) NOT NULL
-     )''')
+        id serial PRIMARY KEY, name VARCHAR(255) NOT NULL, price VARCHAR(255) NOT NULL, link VARCHAR(255) NOT NULL, date TIMESTAMPTZ DEFAULT Now()
+        )''')
 
         con.commit()
 
-        insert = cur.execute(
-            "INSERT INTO price_stats(name, price, link, date) VALUES ('%s', '%s', '%s', '%s')" % (
-                record['name'], record['price'], record['link'], record['date']
+        cur.execute(
+            "INSERT INTO price_stats(name, price, link) VALUES ('%s', '%s', '%s')" % (
+                record['name'], record['price'], record['link']
             )
         )
 

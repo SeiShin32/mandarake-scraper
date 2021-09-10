@@ -2,9 +2,9 @@ from re import template
 from flask import Flask, render_template, request, redirect, url_for
 from psql_con import psql_connection
 import psycopg2
-
 app = Flask(__name__)
 
+from user import routes
 
 @app.route('/')
 def home():
@@ -94,12 +94,5 @@ def delete_link():
     return redirect("/")
 
 
-@app.route("/login")
-def login():
-    return render_template('login.html')
-
-@app.route("/signup")
-def signup():
-    return render_template('signup.html')
 
 

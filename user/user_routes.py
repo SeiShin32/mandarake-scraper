@@ -2,7 +2,7 @@ from flask import Flask, request
 from flask.templating import render_template
 from werkzeug.utils import redirect
 from app import app
-from user.models import User
+from user.user_models import User
 from psql_con import psql_connection
 
 @app.route('/user/signup/', methods=["POST", "GET"])

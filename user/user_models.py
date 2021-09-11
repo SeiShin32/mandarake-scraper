@@ -5,15 +5,14 @@ import psycopg2
 
 class User:
     def sign_up():
+        msg = ' '
 
         user = {
             'email': '',
          'username': '',
          'password': ''
         }
-
-        msg = 'test'
-
+     
         if request.method == 'POST' and 'name' in request.form and 'password' in request.form and 'email' in request.form:
          user['email'] = request.form['email']
          user['username'] = request.form['name']
@@ -36,6 +35,7 @@ class User:
     
     def login(self):
          msg = ' '
+         
          if request.method == 'POST' and 'email' in request.form and 'password' in request.form:
           email = request.form['email']
           password = request.form['password']

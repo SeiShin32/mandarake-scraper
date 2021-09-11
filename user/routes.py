@@ -6,18 +6,14 @@ from user.models import User
 from psql_con import psql_connection
 
 @app.route('/user/signup/', methods=["POST", "GET"])
-def sign_up():
-    if request.method == "POST":
-        try:
-         User.sign_up()
-        finally:
-         render_template('signup.html') 
-    return render_template('signup.html')
+def sign_up():   
+    return User.sign_up()    
 
-@app.route('/user/signout/')
+@app.route('/user/login/', methods=['POST', 'GET'])
+def login():
+  return User().login()       
+
+@app.route('/user/signout/', methods=['GET'])
 def sign_out():
   return User().sign_out()
 
-@app.route('/user/login/', methods=['POST'])
-def login():
-  return User().login()

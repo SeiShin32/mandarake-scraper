@@ -1,10 +1,13 @@
 from re import template
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, session
 from psql_con import psql_connection
-import psycopg2
+import psycopg2, os
 app = Flask(__name__)
+app.secret_key = os.urandom(24)
+
 
 from user import routes
+from user.models import User 
 
 @app.route('/')
 def home():
@@ -16,10 +19,16 @@ def home():
      records = cur.fetchall()
     except:
      records = []
-    
+
+    try:
+     print(session['username'])
+     username = session['username']
+    except:
+     username = 'Anon'
+      
     con.close()
 
-    return render_template('home.html', records=records)
+    return render_template('home.html', records=records, username=username)
 
 
 @app.route('/add', methods=['POST'])

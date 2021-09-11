@@ -6,10 +6,12 @@
     <title>User Signup</title>
     </head>
 <body>
-
+    <a href="/" class="btn ">Back</a>  
     <div class="card-wrapper">
         <div class="card">
+            
             <h1 class="center">Sign Up</h1>
+            <h2>{{msg}}</h2>
             <form action = "/user/signup/" method="post">
     
                 <label for="email">Email</label>
@@ -24,6 +26,7 @@
                 <p class="error error --hidden"></p>
     
                 <input type="submit" value="Sign Up" class="btn">
+                  
                 
             </form>
         </div>

@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, redirect, url_for, session
 from psql_con import psql_connection
 import psycopg2, os
 from app import app
-from get_stats import scan_name, get_driver
+from scraper import scan_name, get_driver
 
 class Link:
 

@@ -5,71 +5,75 @@ from datetime import datetime
 from psql_con import psql_connection
 import psycopg2, time
 
+def get_driver():
+    options = Options()
+    options.add_argument('--headless')
+    return webdriver.Firefox(executable_path='./geckodriver', options=options)
+
 def get_links():
         con = psql_connection()
         cur = con.cursor()
 
-        cur.execute('SELECT * from target_list')
+        cur.execute('SELECT link_id, link from links')
         links = []
+        link_id = 0
         for row in cur:
-            links.append(row[1])
+            links.append(row)
+        
 
         cur.close()
         con.close()
         return links
 
-def save_data(name, price, link):
+def save_data(link_id, price):
 
         record = {
-            'name': name,
+            
             'price': price,
-            'link': link,
+            
         }
 
         con = psql_connection()
         cur = con.cursor()
 
-        cur.execute('''CREATE TABLE IF NOT EXISTS price_stats(
-        id serial PRIMARY KEY, name VARCHAR(255) NOT NULL, price VARCHAR(255) NOT NULL, link VARCHAR(255) NOT NULL, date TIMESTAMPTZ DEFAULT Now()
+        cur.execute('''CREATE TABLE IF NOT EXISTS price_info(
+        id serial PRIMARY KEY, link int REFERENCES links (link_id) on delete cascade, price VARCHAR(255) NOT NULL, date TIMESTAMPTZ DEFAULT Now()
         )''')
 
         con.commit()
 
-        cur.execute(
-            "INSERT INTO price_stats(name, price, link) VALUES ('%s', '%s', '%s')" % (
-                record['name'], record['price'], record['link']
-            )
-        )
+        insert_query = "INSERT INTO price_info (link_id, price) VALUES (%s, %s)"
+        cur.execute(insert_query, (link_id, record['price'], ))
 
         con.commit()
         con.close()
 
-# Setting up webdriver
-options = Options()
-options.add_argument('--headless')
-driver = webdriver.Firefox(
-    executable_path='./geckodriver', options=options)
+def scan_name(driver, link):
+    driver.get(link)
+    if 'mandarake' in link:
+     try:
+      name = driver.find_element_by_xpath("//div[@class='subject']/h1").text
+      print(name + "\n" + datetime.now().strftime('%d/%m/%Y %H:%M') + "\n")
+      driver.close()
+      return name
+     except TypeError:
+      print("Couldn't scan mandarake page properly! Link: " + link)
 
-# Getting data from every link
-
-links = get_links()
-for link in links: 
-        driver.get(link)
-        time.sleep(0.5)
-
-        if 'mandarake' in link:
+def scan(driver, link):
+    driver.get(link)
+    if 'mandarake' in link:
             try:
-                price = driver.find_element_by_xpath(
-                    "//meta[@itemprop='price']").get_attribute("content")
+                price = driver.find_element_by_xpath("//meta[@itemprop='price']").get_attribute("content")
                 name = driver.find_element_by_xpath(
                     "//div[@class='subject']/h1").text
                 print(name + "\n" + price + "\n" +
                       datetime.now().strftime('%d/%m/%Y %H:%M') + "\n")
-                save_data(name, price, link)
+                return price
+                
             except TypeError:
                 print("Couldn't scan mandarake page properly! Link: " + link)
 
-        if 'suruga-ya' in link:
+    if 'suruga-ya' in link:
             try:
                 name = driver.find_elements_by_xpath(
                     '//h1[@class="h1_title_product"]')[0].text
@@ -82,4 +86,19 @@ for link in links:
             except Exception:
                 print("Couldn't scan suruga-ya page properly! Link: " + link + "\n")
 
+# Setting up webdriver
+
+
+# Getting data from every link
+driver = get_driver()
+links = get_links()
+
+for link in links:
+        time.sleep(0.5)
+        print(link[0])
+        save_data(link[0], scan(driver, link[1]))
+
+        
+
 driver.close()
+

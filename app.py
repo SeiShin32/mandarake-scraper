@@ -16,7 +16,7 @@ def home():
     cur = con.cursor()
 
     try:    
-     cur.execute("SELECT * FROM (SELECT DISTINCT ON (name) name, price, to_char(date, 'dd/mm/yyyy HH24:MI'), date, link FROM price_stats ORDER BY name, date DESC) t ORDER BY date DESC, price")
+     cur.execute("SELECT * FROM (SELECT DISTINCT ON (name) name, price, to_char(date, 'dd/mm/yyyy HH24:MI'), date, link FROM price_info ORDER BY name, date DESC) t ORDER BY date DESC, price")
      records = cur.fetchall()
     except:
      records = []
@@ -30,8 +30,3 @@ def home():
     con.close()
 
     return render_template('home.html', records=records, username=username)
-
-
-
-
-

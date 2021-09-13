@@ -3,22 +3,24 @@ from flask import Flask, render_template, request, redirect, url_for, session
 from psql_con import psql_connection
 import psycopg2, os
 from app import app
+from get_stats import scan_name, get_driver
 
 class Link:
 
  def add_link():
     link = request.form["link"]
+    print("\n" + link + "\n")
 
     con = psql_connection()
     cur = con.cursor()
 
-    cur.execute('''CREATE TABLE IF NOT EXISTS target_list(
-    id serial PRIMARY KEY, link VARCHAR(255) NOT NULL
+    cur.execute('''CREATE TABLE IF NOT EXISTS links(
+    link_id serial PRIMARY KEY, link VARCHAR(255) NOT NULL
     )''')
 
     con.commit()
 
-    exists_query = "SELECT EXISTS(SELECT 1 FROM target_list WHERE link = %s)"
+    exists_query = "SELECT EXISTS(SELECT 1 FROM links WHERE link = %s)"
     cur.execute(exists_query, (link,))
     
     check = cur.fetchone()[0]
@@ -33,11 +35,14 @@ class Link:
         con.close()
         return redirect("/")
 
-    insert_query = 'INSERT INTO target_list (link) VALUES (%s)'
-    cur.execute(insert_query, (link,))
+    driver = get_driver()
+    name = scan_name(driver, link)
+
+    insert_query = 'INSERT INTO links (link, name) VALUES (%s, %s)'
+    cur.execute(insert_query, (link, name,))
 
     con.commit()
-    con.close()
+    
 
     print('Link has been added successfully')
     return redirect("/")
@@ -48,7 +53,7 @@ class Link:
     con = psql_connection()
     cur = con.cursor()
 
-    exists_query = "SELECT EXISTS(SELECT 1 FROM target_list WHERE link = %s)"
+    exists_query = "SELECT EXISTS(SELECT 1 FROM links WHERE link = %s)"
     cur.execute(exists_query, (link,))
     
     check = cur.fetchone()[0]
@@ -63,9 +68,9 @@ class Link:
         con.close()
         return redirect("/")
 
-    delete_query = 'DELETE FROM target_list WHERE link = %s'
+    delete_query = 'DELETE FROM links WHERE link = %s'
     cur.execute(delete_query, (link,))
-    delete_query = 'DELETE FROM price_stats WHERE link = %s'
+    delete_query = 'DELETE FROM price_info WHERE link = %s'
     cur.execute(delete_query, (link,))
     con.commit()
     

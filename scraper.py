@@ -5,6 +5,8 @@ from datetime import datetime
 from psql_con import psql_connection
 import psycopg2, time
 
+
+
 def get_driver():
     options = Options()
     options.add_argument('--headless')
@@ -50,55 +52,57 @@ def save_data(link_id, price):
 
 def scan_name(driver, link):
     driver.get(link)
+
     if 'mandarake' in link:
      try:
       name = driver.find_element_by_xpath("//div[@class='subject']/h1").text
       print(name + "\n" + datetime.now().strftime('%d/%m/%Y %H:%M') + "\n")
-      driver.close()
       return name
      except TypeError:
       print("Couldn't scan mandarake page properly! Link: " + link)
-
-def scan(driver, link):
-    driver.get(link)
-    if 'mandarake' in link:
-            try:
-                price = driver.find_element_by_xpath("//meta[@itemprop='price']").get_attribute("content")
-                name = driver.find_element_by_xpath(
-                    "//div[@class='subject']/h1").text
-                print(name + "\n" + price + "\n" +
-                      datetime.now().strftime('%d/%m/%Y %H:%M') + "\n")
-                return price
-                
-            except TypeError:
-                print("Couldn't scan mandarake page properly! Link: " + link)
+     
 
     if 'suruga-ya' in link:
-            try:
-                name = driver.find_elements_by_xpath(
-                    '//h1[@class="h1_title_product"]')[0].text
-                price = driver.find_element_by_xpath(
-                    "//span[@class='text-price-detail price-buy']").text
-                price = ''.join(x for x in price if x.isdigit())
-                print(name + "\n" + price + "\n" +
-                      datetime.now().strftime('%d/%m/%Y %H:%M') + "\n")
-                save_data(name, price, link)
-            except Exception:
-                print("Couldn't scan suruga-ya page properly! Link: " + link + "\n")
+     try:
+        name = driver.find_elements_by_xpath('//h1[@class="h1_title_product"]')[0].text
+        print(name + "\n" + datetime.now().strftime('%d/%m/%Y %H:%M') + "\n")
+        return name
+     except TypeError:
+      print("Couldn't scan suruga-ya page properly! Link: " + link + "\n")
+    
 
-# Setting up webdriver
+def scan_price(driver, link):
+    driver.get(link)
+    if 'mandarake' in link:
+     try:
+      price = driver.find_element_by_xpath("//meta[@itemprop='price']").get_attribute("content")
+      print("\n" + price + "\n" + datetime.now().strftime('%d/%m/%Y %H:%M') + "\n")
+      return price                
+     except TypeError:
+      print("Couldn't scan mandarake page properly! Link: " + link)
+     
 
+    if 'suruga-ya' in link:
+     try:
+      price = driver.find_element_by_xpath("//span[@class='text-price-detail price-buy']").text
+      price = ''.join(x for x in price if x.isdigit())
+      print("\n" + price + "\n" + datetime.now().strftime('%d/%m/%Y %H:%M') + "\n")
+      return price
+     except Exception:
+      print("Couldn't scan suruga-ya page properly! Link: " + link + "\n")
+     
+if __name__ == "__main__":
+  driver = get_driver()
+  links = get_links()
 
-# Getting data from every link
-driver = get_driver()
-links = get_links()
-
-for link in links:
+  for link in links:
         time.sleep(0.5)
         print(link[0])
-        save_data(link[0], scan(driver, link[1]))
+        save_data(link[0], scan_price(driver, link[1]))
+  driver.close()
 
-        
+ 
+     
 
-driver.close()
+
 

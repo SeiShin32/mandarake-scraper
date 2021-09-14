@@ -7,8 +7,8 @@ from link.link_models import Link
 
 @app.route('/add', methods=['POST'])
 def add_link():   
-    return Link.add_link()    
+    return Link.add_link(session)    
 
 @app.route('/delete', methods=['POST', 'GET'])
 def delete():
-  return Link().delete_link()
+  return Link().delete_link(session)

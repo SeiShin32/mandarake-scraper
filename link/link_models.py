@@ -6,10 +6,11 @@ from app import app
 from scraper import scan_name, get_driver
 
 class Link:
-
- def add_link():
+ 
+ def add_link(session):
     link = request.form["link"]
     print("\n" + link + "\n")
+    print('user id: ' + str(session['id']) + "\n")
 
     con = psql_connection()
     cur = con.cursor()
@@ -28,12 +29,12 @@ class Link:
     if not link:
         print("Empty link!")
         con.close()
-        return redirect("/")
+        return redirect(url_for('home'))
 
     if check:
         print("This link already exists!")
         con.close()
-        return redirect("/")
+        return redirect(url_for('home'))
 
     driver = get_driver()
     name = scan_name(driver, link)
@@ -43,11 +44,21 @@ class Link:
 
     con.commit()
     
+    get_link_id = "SELECT link_id from links where link = %s"
+    cur.execute(get_link_id, (link, ))
+    link_id = cur.fetchone()
+    print(link_id)
+
+    insert_query = 'INSERT INTO users_links (link_id, user_id) VALUES (%s, %s)'
+    cur.execute(insert_query, (link_id, session['id'],))    
+
+    con.commit()
+    
 
     print('Link has been added successfully')
-    return redirect("/")
+    return redirect(url_for('home'))
 
- def delete_link(self):
+ def delete_link(self, session):
 
     link = request.form["link"]
     con = psql_connection()
@@ -61,16 +72,14 @@ class Link:
     if not link:
         print("Empty link!")
         con.close()
-        return redirect("/")
+        return redirect(url_for('home'))
 
     if check == 0:
         print("Invalid link!")
         con.close()
-        return redirect("/")
+        return redirect(url_for('home'))
 
     delete_query = 'DELETE FROM links WHERE link = %s'
-    cur.execute(delete_query, (link,))
-    delete_query = 'DELETE FROM price_info WHERE link = %s'
     cur.execute(delete_query, (link,))
     con.commit()
     

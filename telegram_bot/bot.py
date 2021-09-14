@@ -1,5 +1,5 @@
 from os import link
-import sqlite3, telebot, logging, tele_token, get_stats
+import sqlite3, telebot, logging, tele_token, scraper
 
 bot = telebot.TeleBot(tele_token.t_token)
 logger = telebot.logger
@@ -74,7 +74,7 @@ def add_link(message):
 def add_link(message):
   bot.reply_to(message, 'Scanning...')
   try:
-   get_stats.scan()
+   scraper.scan()
   except:
    bot.reply_to(message, 'Something went wrong! Try again!')
   

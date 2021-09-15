@@ -49,6 +49,7 @@ def save_data(link_id, price):
 
         con.commit()
         con.close()
+ 
 
 def scan_name(driver, link):
     driver.get(link)
@@ -96,7 +97,7 @@ if __name__ == "__main__":
   links = get_links()
 
   for link in links:
-        time.sleep(0.5)
+        time.sleep(1)
         print(link[0])
         save_data(link[0], scan_price(driver, link[1]))
   driver.close()

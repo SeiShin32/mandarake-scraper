@@ -12,6 +12,10 @@ class Link:
     print("\n" + link + "\n")
     print('user id: ' + str(session['id']) + "\n")
 
+    if not link:
+        print("Empty link!")
+        return redirect(url_for('home'))
+
     con = psql_connection()
     cur = con.cursor()
 
@@ -21,18 +25,26 @@ class Link:
 
     con.commit()
 
-    exists_query = "SELECT EXISTS(SELECT 1 FROM links WHERE link = %s)"
-    cur.execute(exists_query, (link,))
-    
-    check = cur.fetchone()[0]
+    check_query = "SELECT EXISTS(SELECT * FROM users_links WHERE user_id = %s AND link_id = (SELECT link_id FROM links WHERE link = %s))"
+    cur.execute(check_query, (session['id'], link,))
 
-    if not link:
-        print("Empty link!")
+    is_added = cur.fetchone()[0]
+
+    if is_added:
+        print("This user has already added this link!")
         con.close()
         return redirect(url_for('home'))
 
-    if check:
-        print("This link already exists!")
+
+    exists_query = "SELECT EXISTS(SELECT 1 FROM links WHERE link = %s)"
+    cur.execute(exists_query, (link,))
+    
+    is_link_exists = cur.fetchone()[0]
+
+    if is_link_exists:
+        insert_query = 'INSERT INTO users_links (user_id, link_id) VALUES (%s, (SELECT link_id FROM links WHERE link = %s))'
+        cur.execute(insert_query, (session['id'], link,))
+        con.commit()
         con.close()
         return redirect(url_for('home'))
 

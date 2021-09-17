@@ -78,30 +78,32 @@ class Link:
     con = psql_connection()
     cur = con.cursor()
 
-    exists_query = "SELECT EXISTS(SELECT 1 FROM links WHERE link = %s)"
-    cur.execute(exists_query, (link,))
-    
-    check = cur.fetchone()[0]
-    if check == 0:
-        print("Invalid link!")
-        con.close()
-        return redirect(url_for('home'))
-
-    check_query = "SELECT EXISTS(SELECT * FROM users_links where link_id = (SELECT link_id FROM links WHERE link = %s))"
+    check_query = "SELECT EXISTS(SELECT 1 FROM users_links where user_id = %s AND link_id = (SELECT link_id FROM links WHERE link = %s))"
     cur.execute(check_query, (session['id'], link,))
 
     is_added = cur.fetchone()[0]
 
-    if is_added:
-        print("This user has already added this link!")
+    if is_added == 0:
+        print("This user doesn't have this link added!")
         con.close()
         return redirect(url_for('home'))
 
-    delete_query = 'DELETE FROM links WHERE link = %s'
-    cur.execute(delete_query, (link,))
+    delete_query = 'DELETE FROM users_links WHERE user_id = %s AND link_id = (SELECT link_id FROM links WHERE link = %s)'
+    cur.execute(delete_query, (session['id'], link,))
     con.commit()
-    
+
+    check_query = "SELECT EXISTS(SELECT * FROM users_links WHERE link_id = (SELECT link_id FROM links WHERE link = %s))"
+    cur.execute(check_query, (link,))
+    link_exists = cur.fetchone()[0]
+
+    if link_exists == 0:
+     delete_query = 'DELETE FROM links WHERE link = %s'
+     cur.execute(delete_query, (link,))
+     con.commit()
+     con.close()
+     return redirect(url_for('home'))  
+       
     con.close()
 
     print("Record has been deleted")
-    return redirect("/")
+    return redirect(url_for('home'))

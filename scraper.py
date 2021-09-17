@@ -101,7 +101,7 @@ if __name__ == "__main__":
         print(link[0])
         save_data(link[0], scan_price(driver, link[1]))
       except:
-       print("Something appears to be wrong with the link!" + '\n' + link) 
+       print("Something appears to be wrong with the link!" + '\n' + str(link)) 
   driver.close()
 
  

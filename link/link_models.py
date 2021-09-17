@@ -35,7 +35,6 @@ class Link:
         con.close()
         return redirect(url_for('home'))
 
-
     exists_query = "SELECT EXISTS(SELECT 1 FROM links WHERE link = %s)"
     cur.execute(exists_query, (link,))
     
@@ -66,13 +65,16 @@ class Link:
 
     con.commit()
     
-
     print('Link has been added successfully')
     return redirect(url_for('home'))
 
  def delete_link(self, session):
-
     link = request.form["link"]
+    
+    if not link:
+        print("Empty link!")       
+        return redirect(url_for('home'))
+
     con = psql_connection()
     cur = con.cursor()
 
@@ -80,14 +82,18 @@ class Link:
     cur.execute(exists_query, (link,))
     
     check = cur.fetchone()[0]
-
-    if not link:
-        print("Empty link!")
+    if check == 0:
+        print("Invalid link!")
         con.close()
         return redirect(url_for('home'))
 
-    if check == 0:
-        print("Invalid link!")
+    check_query = "SELECT EXISTS(SELECT * FROM users_links where link_id = (SELECT link_id FROM links WHERE link = %s))"
+    cur.execute(check_query, (session['id'], link,))
+
+    is_added = cur.fetchone()[0]
+
+    if is_added:
+        print("This user has already added this link!")
         con.close()
         return redirect(url_for('home'))
 

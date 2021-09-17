@@ -5,8 +5,6 @@ from datetime import datetime
 from psql_con import psql_connection
 import psycopg2, time
 
-
-
 def get_driver():
     options = Options()
     options.add_argument('--headless')
@@ -62,7 +60,6 @@ def scan_name(driver, link):
      except TypeError:
       print("Couldn't scan mandarake page properly! Link: " + link)
      
-
     if 'suruga-ya' in link:
      try:
         name = driver.find_elements_by_xpath('//h1[@class="h1_title_product"]')[0].text
@@ -94,12 +91,17 @@ def scan_price(driver, link):
      
 if __name__ == "__main__":
   driver = get_driver()
+
   links = get_links()
 
   for link in links:
+      try:
+        driver.refresh()
         time.sleep(1)
         print(link[0])
         save_data(link[0], scan_price(driver, link[1]))
+      except:
+       print("Something appears to be wrong with the link!" + '\n' + link) 
   driver.close()
 
  

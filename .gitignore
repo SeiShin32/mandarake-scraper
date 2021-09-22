@@ -2,6 +2,7 @@ nano.save
 nano.save.1
 prices.db
 test.py
+test2.py
 geckodriver.log
 tele_token.py
 psql_con.py

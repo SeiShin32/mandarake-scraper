@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, redirect, url_for, session
 from psql_con import psql_connection
 import psycopg2, os
 from app import app
-from scraper import scan_name, get_driver
+from scraper import scan_name, get_soup
 
 class Link:
  
@@ -47,8 +47,8 @@ class Link:
         con.close()
         return redirect(url_for('home'))
 
-    driver = get_driver()
-    name = scan_name(driver, link)
+    soup = get_soup(link)
+    name = scan_name(soup, link)
 
     insert_query = 'INSERT INTO links (link, name) VALUES (%s, %s)'
     cur.execute(insert_query, (link, name,))

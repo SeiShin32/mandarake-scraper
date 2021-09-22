@@ -1,14 +1,13 @@
 from os import getloadavg
-from selenium import webdriver
-from selenium.webdriver.firefox.options import Options
+from bs4 import BeautifulSoup
 from datetime import datetime
 from psql_con import psql_connection
-import psycopg2, time
+import psycopg2, time, requests
 
-def get_driver():
-    options = Options()
-    options.add_argument('--headless')
-    return webdriver.Firefox(executable_path='./geckodriver', options=options)
+def get_soup(link):
+    headers = {'User-Agent': 'Mozilla/5.0'}
+    page = requests.get(link, headers = headers)
+    return BeautifulSoup(page.text, "html.parser")
 
 def get_links():
         con = psql_connection()
@@ -49,61 +48,71 @@ def save_data(link_id, price):
         con.close()
  
 
-def scan_name(driver, link):
-    driver.get(link)
+def scan_name(soup, link):
 
-    if 'mandarake' in link:
-     try:
-      name = driver.find_element_by_xpath("//div[@class='subject']/h1").text
-      print(name + "\n" + datetime.now().strftime('%d/%m/%Y %H:%M') + "\n")
-      return name
-     except TypeError:
+ if 'mandarake' in link:
+  try:
+      name = soup.find(itemprop='name').get('content')
+      print(name + "\n")
+      return name 
+  except TypeError:
       print("Couldn't scan mandarake page properly! Link: " + link)
      
-    if 'suruga-ya' in link:
-     try:
-        name = driver.find_elements_by_xpath('//h1[@class="h1_title_product"]')[0].text
-        print(name + "\n" + datetime.now().strftime('%d/%m/%Y %H:%M') + "\n")
-        return name
-     except TypeError:
+ if 'suruga-ya' in link:
+  try:
+        name = soup.select('h1.h1_title_product')[0].text.strip()
+        print(name + "\n")  
+        return name 
+  except TypeError:
+      print("Couldn't scan suruga-ya page properly! Link: " + link + "\n")
+
+ if 'mercari' in link:
+  try:
+      name = soup.select('h1.item-name')[0].text.strip()
+      print("\n" + name + "\n")
+      return name
+  except TypeError:
       print("Couldn't scan suruga-ya page properly! Link: " + link + "\n")
     
 
-def scan_price(driver, link):
-    driver.get(link)
-    if 'mandarake' in link:
-     try:
-      price = driver.find_element_by_xpath("//meta[@itemprop='price']").get_attribute("content")
-      print("\n" + price + "\n" + datetime.now().strftime('%d/%m/%Y %H:%M') + "\n")
+def scan_price(soup, link):
+  
+ if 'mandarake' in link:
+  try:
+      price = soup.find(itemprop='price').get('content')
+      print("\n" + price + "\n")
       return price                
-     except TypeError:
+  except TypeError:
       print("Couldn't scan mandarake page properly! Link: " + link)
      
-
-    if 'suruga-ya' in link:
-     try:
-      price = driver.find_element_by_xpath("//span[@class='text-price-detail price-buy']").text
+ if 'suruga-ya' in link:
+  try:
+      price = soup.find('span', class_='text-price-detail price-buy').text
       price = ''.join(x for x in price if x.isdigit())
-      print("\n" + price + "\n" + datetime.now().strftime('%d/%m/%Y %H:%M') + "\n")
+      print("\n" + price + "\n")
       return price
-     except Exception:
+  except TypeError:
+      print("Couldn't scan suruga-ya page properly! Link: " + link + "\n")
+
+ if 'mercari' in link:
+  try:
+      price = soup.find('span', class_='item-price bold').text
+      price = ''.join(x for x in price if x.isdigit())
+      print("\n" + price + "\n")
+      return price
+  except TypeError:
       print("Couldn't scan suruga-ya page properly! Link: " + link + "\n")
      
 if __name__ == "__main__":
-  driver = get_driver()
-
   links = get_links()
-
+  
   for link in links:
-      try:
-        driver.refresh()
-        time.sleep(1)
+    try:
         print(link[0])
-        save_data(link[0], scan_price(driver, link[1]))
-      except:
+        save_data(link[0], scan_price(get_soup(link[1]), link[1]))
+    except:
        print("Something appears to be wrong with the link!" + '\n' + str(link)) 
-  driver.close()
-
+  
  
      
 

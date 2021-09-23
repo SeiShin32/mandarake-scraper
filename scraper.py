@@ -27,9 +27,7 @@ def get_links():
 def save_data(link_id, price):
 
         record = {
-            
             'price': price,
-            
         }
 
         con = psql_connection()

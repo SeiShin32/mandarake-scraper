@@ -1,12 +1,19 @@
+import psycopg2, telebot, logging, tele_token, sys, os
 from os import link
-import sqlite3, telebot, logging, tele_token, scraper
+
+currentdir = os.path.dirname(os.path.realpath(__file__))
+parentdir = os.path.dirname(currentdir)
+sys.path.append(parentdir)
+
+from psql_con import psql_connection
+from scraper import *
 
 bot = telebot.TeleBot(tele_token.t_token)
 logger = telebot.logger
 telebot.logger.setLevel(logging.DEBUG) 
 
 def insert_data(query):
- con = sqlite3.connect('prices.db', timeout = 10)
+ con = psql_connection()
  cur = con.cursor()
  try:
   return cur.execute(query) 
@@ -17,12 +24,12 @@ def insert_data(query):
   con.commit()
   
 def check_if_entry_exists(link):
-  return insert_data("SELECT EXISTS(SELECT * FROM target_list WHERE link ='" + link + "');").fetchone()[0]
+  return insert_data("SELECT EXISTS(SELECT * FROM target_list WHERE link = %s)", (link,)).fetchone()[0]
 
 #Pulls data from the database
 
 def get_data(query):
- con = sqlite3.connect('prices.db', timeout = 10)
+ con = psql_connection()
  cur = con.cursor()
  try:
   records = cur.execute(query).fetchall()
@@ -74,7 +81,7 @@ def add_link(message):
 def add_link(message):
   bot.reply_to(message, 'Scanning...')
   try:
-   scraper.scan()
+   return 1
   except:
    bot.reply_to(message, 'Something went wrong! Try again!')
   
@@ -105,7 +112,7 @@ def get_db_request(message):
 	 bot.reply_to(message, "Hoy!")
 
 	if message.text.lower() == 'get db':	 
-	 bot.reply_to(message, format_records('SELECT name, price, date FROM weekly_stats GROUP BY name ORDER BY MAX(date) DESC'))
+	 bot.reply_to(message, format_records('SELECT name, price, date FROM price_info GROUP BY name ORDER BY MAX(date) DESC'))
 
 	if message.text.lower() == 'get titles':
 	 bot.reply_to(message, format_records('SELECT name FROM weekly_stats GROUP BY name ORDER BY MAX(date) DESC')) 

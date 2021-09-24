@@ -32,8 +32,8 @@ def get_data(query):
  con = psql_connection()
  cur = con.cursor()
  try:
-  records = cur.execute(query).fetchall()
-  return records  
+  records = cur.execute(query)
+  return records.fetchall()  
  except Exception:
   print('Invalid query!')
   pass
@@ -110,7 +110,7 @@ def get_db_request(message):
 
 	if message.text.lower() == 'hoy':
 	 bot.reply_to(message, "Hoy!")
-
+'''
 	if message.text.lower() == 'get db':	 
 	 bot.reply_to(message, format_records('SELECT name, price, date FROM price_info GROUP BY name ORDER BY MAX(date) DESC'))
 
@@ -119,5 +119,5 @@ def get_db_request(message):
 	 
 	if message.text.lower() == 'get titles with prices':
 	 bot.reply_to(message, format_records('SELECT name, price FROM weekly_stats GROUP BY name ORDER BY MAX(date) DESC'))
-
+'''
 bot.polling()

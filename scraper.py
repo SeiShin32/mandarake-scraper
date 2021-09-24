@@ -12,14 +12,11 @@ def get_soup(link):
 def get_links():
         con = psql_connection()
         cur = con.cursor()
-
         cur.execute('SELECT link_id, link from links')
         links = []
-        link_id = 0
         for row in cur:
             links.append(row)
         
-
         cur.close()
         con.close()
         return links

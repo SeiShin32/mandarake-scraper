@@ -20,7 +20,7 @@ class Link:
     cur = con.cursor()
 
     cur.execute('''CREATE TABLE IF NOT EXISTS links(
-    link_id serial PRIMARY KEY, link VARCHAR(255) NOT NULL
+    link_id serial PRIMARY KEY, link VARCHAR(255) NOT NULL, name VARCHAR(255) NOT NULL
     )''')
 
     con.commit()

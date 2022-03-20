@@ -22,13 +22,15 @@ def home():
      username = 'Anon'
      session['id'] = '0'
 
-        
-    records_query = '''select l.link, l.name, pi.price, 
-    to_char(pi.date, 'dd/mm/yyyy HH24:MI') from users_links as ul inner join links l on ul.link_id = l.link_id 
-    inner join (select distinct on (link_id) link_id, price, date from price_info order by link_id, date desc) pi 
-    on pi.link_id = ul.link_id where ul.user_id = %s'''
-    cur.execute(records_query, (session['id'], )) 
-    records = cur.fetchall()
+    try:
+     records_query = '''select l.link, l.name, pi.price, 
+     to_char(pi.date, 'dd/mm/yyyy HH24:MI') from users_links as ul inner join links l on ul.link_id = l.link_id 
+     inner join (select distinct on (link_id) link_id, price, date from price_info order by link_id, date desc) pi 
+     on pi.link_id = ul.link_id where ul.user_id = %s'''
+     cur.execute(records_query, (session['id'], )) 
+     records = cur.fetchall()
+    except:
+     records = []
       
     con.close()
 

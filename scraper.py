@@ -31,7 +31,7 @@ def save_data(link_id, price):
         cur = con.cursor()
 
         cur.execute('''CREATE TABLE IF NOT EXISTS price_info(
-        id serial PRIMARY KEY, link int REFERENCES links (link_id) on delete cascade, price VARCHAR(255) NOT NULL, date TIMESTAMPTZ DEFAULT Now()
+        id serial PRIMARY KEY, link_id int REFERENCES links (link_id) on delete cascade, price VARCHAR(255) NOT NULL, date TIMESTAMPTZ DEFAULT Now()
         )''')
 
         con.commit()
@@ -60,7 +60,7 @@ def scan_name(soup, link):
         return name 
   except TypeError:
       print("Couldn't scan suruga-ya page properly! Link: " + link + "\n")
-
+'''
  if 'mercari' in link:
   try:
       name = soup.select('h1.item-name')[0].text.strip()
@@ -68,7 +68,7 @@ def scan_name(soup, link):
       return name
   except TypeError:
       print("Couldn't scan suruga-ya page properly! Link: " + link + "\n")
-    
+'''    
 
 def scan_price(soup, link):
   
@@ -89,24 +89,24 @@ def scan_price(soup, link):
   except TypeError:
       print("Couldn't scan suruga-ya page properly! Link: " + link + "\n")
 
+'''
  if 'mercari' in link:
   try:
-      price = soup.find('span', class_='item-price bold').text
+      price = soup.find('mer-price["value"]').text
       price = ''.join(x for x in price if x.isdigit())
       print("\n" + price + "\n")
       return price
   except TypeError:
       print("Couldn't scan suruga-ya page properly! Link: " + link + "\n")
-     
+'''     
 if __name__ == "__main__":
   links = get_links()
   
   for link in links:
-    try:
+    
         print(link[0])
         save_data(link[0], scan_price(get_soup(link[1]), link[1]))
-    except:
-       print("Something appears to be wrong with the link!" + '\n' + str(link)) 
+    
   
  
      

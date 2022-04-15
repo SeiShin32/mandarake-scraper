@@ -1,5 +1,5 @@
 from re import template
-from flask import Flask, render_template, request, redirect, url_for, session
+from flask import Flask, render_template, request, redirect, url_for, session, jsonify
 from psql_con import psql_connection
 import psycopg2, os
 
@@ -34,4 +34,4 @@ def home():
       
     con.close()
 
-    return render_template('home.html', records=records, username=username)
+    return jsonify(records=records, username=username)

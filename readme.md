@@ -16,7 +16,7 @@
 
 6. Устанавливаешь в эту среду все нужные либы      
 
-        pip install flask passlib beautifulsoup4 lxml requests psycorg2
+        pip install flask passlib beautifulsoup4 lxml requests psycopg2
 
 7. Запускаешь проект      
 

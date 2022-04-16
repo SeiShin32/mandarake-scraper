@@ -1,19 +1,10 @@
-1. Качаешь питон
+1. Качаешь питон 
 
-        sudo apt install python3.9
-
-2. Устанавливаешь pip (пакет менеджер)
-
-        sudo apt get install python3-pip
-
-3. Устанавливаешь ДБ
-
-        sudo apt install postgresql
+        sudo apt install python3.9 python3-pip postgresql libpq-dev
 
 3. Качаешь либу для отделенных сред разработки 
 
         pip install virtualenv
-
 
 4. Создаешь отдельную среду разработки
 
@@ -25,7 +16,7 @@
 
 6. Устанавливаешь в эту среду все нужные либы      
 
-        pip install flask passlib beautifulsoup4 lxml requests
+        pip install flask passlib beautifulsoup4 lxml requests psycorg2
 
 7. Запускаешь проект      
 
